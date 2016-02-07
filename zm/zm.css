@@ -1,0 +1,64 @@
+/* ZM (základní mapa) */
+
+/* color scheme inspired by basemap of Czech Office for Surveying, Mapping and Cadastre  */
+
+/* water */
+
+.fill.tag-natural-water, .fill.tag-landuse-reservoir { fill: #BEE7FA; }
+.stroke.tag-natural-water, .stroke.tag-landuse-reservoir { stroke: #00AEEF; }
+.fill.tag-waterway { fill: #BEE7FA; }
+
+.tag-waterway { stroke: #00AEEF; stroke-width: 2px; }
+.area.tag-waterway { stroke-width: 1px; }
+
+/* areas */
+
+.stroke.tag-bulding { stroke: #989A9D; }
+.fill.tag-building { fill: #D4D4CD; }
+
+.tag-landuse-forest { fill: #DFECBD; }
+.tag-landuse-garden { fill: #ECF3D1; }
+
+.tag-landuse-meadow, .tag-landuse-grass { fill: #FFFBD2; }
+
+
+.stroke.tag-power-line { stroke: #989A9D; stroke-dasharray: 5,2,3,2; }
+
+/* roads */
+
+.casing.tag-railway-tram { stroke: #86888B; stroke-width: 3; stroke-dasharray: 1, 5; stroke-linecap: butt; }
+.stroke.tag-railway-tram { stroke: #86888B; stroke-width: 1; }
+
+.casing.tag-highway-motorway { stroke: #86888B; stroke-width: 4px; }
+.stroke.tag-highway-motorway { stroke: #FFF33C; stroke-width: 2px; }
+
+
+.casing.tag-highway-motorway_link,
+.casing.tag-highway-trunk,
+.casing.tag-highway-trunk_link,
+.casing.tag-highway-primary,
+.casing.tag-highway-primary_link,
+.casing.tag-highway-secondary,
+.casing.tag-highway-secondary_link,
+.casing.tag-highway-tertiary { stroke: #86888B; stroke-width: 4px; }
+
+.stroke.tag-highway-motorway_link,
+.stroke.tag-highway-trunk,
+.stroke.tag-highway-trunk_link,
+.stroke.tag-highway-primary,
+.stroke.tag-highway-primary_link,
+.stroke.tag-highway-secondary,
+.stroke.tag-highway-secondary_link,
+.stroke.tag-highway-tertiary { stroke: #FFF33C; stroke-width: 2px;  }
+
+.casing.tag-highway-residential,
+.casing.tag-highway-service { stroke: #86888B; stroke-width: 4px; }
+.stroke.tag-highway-residential,
+.stroke.tag-highway-service { stroke: white; stroke-width: 2px;  }
+
+/* railways */
+
+.casing.tag-railway-rail { stroke: #86888B; stroke-width: 3px; }
+.stroke.tag-railway-rail { stroke: white; stroke-width: 2px; stroke-dasharray: 12,12; }
+
+.tag-tunnel { display: none; }

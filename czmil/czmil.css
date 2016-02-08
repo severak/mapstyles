@@ -1,0 +1,47 @@
+/* czmil color scheme */
+
+/* inspired by color scheme of czech military topographic maps*/
+
+.fill.tag-natural-water, .fill.tag-landuse-reservoir { fill: #C9E7F6; }
+.stroke.tag-natural-water, .stroke.tag-landuse-reservoir { stroke: #1980AA; }
+.fill.tag-waterway { fill: #C9E7F6; }
+.fill.tag-building { fill: #BBBCBC; }
+
+.tag-waterway { stroke: #1980AA; stroke-width: 2px; }
+.area.tag-waterway { stroke-width: 1px; }
+
+.casing.tag-highway-motorway { stroke: black; stroke-width: 4px; }
+.stroke.tag-highway-motorway { stroke: orange; stroke-width: 2px; }
+
+
+.casing.tag-highway-motorway_link,
+.casing.tag-highway-trunk,
+.casing.tag-highway-trunk_link,
+.casing.tag-highway-primary,
+.casing.tag-highway-primary_link,
+.casing.tag-highway-secondary,
+.casing.tag-highway-secondary_link,
+.casing.tag-highway-tertiary { stroke: black; stroke-width: 4px; }
+
+.stroke.tag-highway-motorway_link,
+.stroke.tag-highway-trunk,
+.stroke.tag-highway-trunk_link,
+.stroke.tag-highway-primary,
+.stroke.tag-highway-primary_link,
+.stroke.tag-highway-secondary,
+.stroke.tag-highway-secondary_link,
+.stroke.tag-highway-tertiary { stroke: #E99222; stroke-width: 2px;  }
+
+.casing.tag-highway-residential, 
+.casing.tag-highway-service { stroke: black; stroke-width: 4px; }
+.stroke.tag-highway-residential,
+.stroke.tag-highway-service { stroke: white; stroke-width: 2px;  }
+
+.tag-railway-rail { stroke: black; stroke-width: 2px; }
+
+.tag-landuse-forest { fill: #E8EEC3; }
+.tag-landuse-grass { fill: #F1F6E7; }
+.tag-tunnel { stroke-dasharray: 3,3; }
+
+.casing.tag-railway-rail.tag-bridge { stroke: #000; stroke-width: 4;  }
+.stroke.tag-railway-rail.tag-bridge { stroke: #FFF; stroke-width: 2;  }

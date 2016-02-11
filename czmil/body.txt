@@ -1,0 +1,92 @@
+<!-- landuse -->
+<rule e="way" k="natural|landuse" v="forest|wood">
+	<area fill="#E8EEC3" stroke-width="0"/>
+	<line stroke="#000000" stroke-width="1" stroke-dasharray="1, 4"/>
+</rule>
+
+<rule e="way" k="landuse" v="grass">
+	<area fill="#F1F6E7" stroke-width="0"/>
+	<line stroke="#000000" stroke-width="1" stroke-dasharray="1, 4"/>
+</rule>
+
+<rule e="way" k="landuse" v="residential">
+	<area fill="#BBBCBC" stroke-width="0"/>
+	<line stroke="#000000" stroke-width="1"/>
+</rule>
+
+<rule e="way" k="waterway" v="stream|canal|ditch|drain" zoom-min="14">
+	<line stroke="#1980AA" stroke-width="1"/>
+</rule>
+
+<rule e="way" k="natural|landuse" v="water|reservoir">
+	<area fill="#C9E7F6" stroke="#1980AA" stroke-width="1"/>
+</rule>
+
+<rule e="way" k="waterway" v="riverbank">
+	<area fill="#C9E7F6" stroke="#1980AA" stroke-width="1"/>
+</rule>
+
+<!-- buildings -->
+<rule e="way" k="building" v="*">
+	<area fill="#000000" stroke-width="0"/>
+</rule>
+
+<!-- ways -->
+<rule e="way" k="tunnel" v="~|no">
+<rule e="way" k="bridge" v="~|no">
+<rule e="way" k="area" v="~|no">
+	<!-- casing -->
+	<rule e="way" k="highway" v="track|path|bridleway" zoom-min="14">
+		<line stroke="#000000" stroke-width="1" stroke-dasharray="12, 4"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="residential|road|service|unclassified" zoom-min="13">
+		<line stroke="#000000" stroke-width="4" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="motorway|trunk|primary|secondary|tertiary|motorway_link|trunk_link|primary_link|secondary_link|tertiary_link">
+		<line stroke="#000000" stroke-width="4" stroke-linecap="butt"/>
+	</rule>
+
+	<!-- stroke -->
+	<rule e="way" k="highway" v="residential|road|service|unclassified" zoom-min="13">
+		<line stroke="#FFFFFF" stroke-width="2" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="motorway|trunk|primary|secondary|tertiary|motorway_link|trunk_link|primary_link|secondary_link|tertiary_link">
+		<line stroke="#E99222" stroke-width="2" stroke-linecap="butt"/>
+	</rule>
+	
+
+	<rule e="way" k="railway" v="rail">
+		<rule e="way" k="service" v="yard">
+			<!-- todo rozfungovat vedlejsi koleje -->
+			<line stroke="#000000" stroke-width="1" stroke-linecap="butt"/>
+		</rule>
+		<rule e="way" k="service" v="mainline|~">
+			<line stroke="#000000" stroke-width="3" stroke-linecap="butt"/>
+		</rule>
+	</rule>
+</rule>
+</rule>
+</rule>
+
+<!-- bridges -->
+
+<rule e="way" k="bridge" v="*">
+	<rule e="way" k="highway" v="*">
+		<line stroke="#000000" stroke-width="4" stroke-linecap="butt"/>
+		<line stroke="#FFFFFF" stroke-width="2" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="railway" v="rail">
+		<line stroke="#000000" stroke-width="5" stroke-linecap="butt"/>
+		<line stroke="#FFFFFF" stroke-width="3" stroke-linecap="butt"/>
+	</rule>
+</rule>
+
+<!-- labels -->
+
+<rule e="way" k="waterway" v="river" zoom-min="13">
+	<pathText k="name" font-style="bold" font-size="12" fill="#1980AA"/>
+</rule>

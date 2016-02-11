@@ -5,7 +5,7 @@
 .fill.tag-natural-water, .fill.tag-landuse-reservoir { fill: #C9E7F6; }
 .stroke.tag-natural-water, .stroke.tag-landuse-reservoir { stroke: #1980AA; }
 .fill.tag-waterway { fill: #C9E7F6; }
-.fill.tag-building { fill: #BBBCBC; }
+.fill.tag-building { fill: #000000; }
 
 .tag-waterway { stroke: #1980AA; stroke-width: 2px; }
 .area.tag-waterway { stroke-width: 1px; }
@@ -32,16 +32,28 @@
 .stroke.tag-highway-secondary_link,
 .stroke.tag-highway-tertiary { stroke: #E99222; stroke-width: 2px;  }
 
-.casing.tag-highway-residential, 
+.casing.tag-highway-residential,
+.casing.tag-highway-unclassified, 
 .casing.tag-highway-service { stroke: black; stroke-width: 4px; }
 .stroke.tag-highway-residential,
+.stroke.tag-highway-unclassified, 
 .stroke.tag-highway-service { stroke: white; stroke-width: 2px;  }
 
-.tag-railway-rail { stroke: black; stroke-width: 2px; }
+.stroke.tag-highway-track { stroke: black; stroke-dasharray: 12,4; }
 
-.tag-landuse-forest { fill: #E8EEC3; }
-.tag-landuse-grass { fill: #F1F6E7; }
+.tag-railway-rail { stroke: black; stroke-width: 3; }
+
+.tag-landuse-forest { fill: #E8EEC3; stroke: #000; stroke-dasharray: 1, 4; }
+.tag-landuse-grass { fill: #F1F6E7; stroke: #000; stroke-dasharray: 1, 4; }
+.tag-landuse-residential { fill: #BBBCBC; stroke: #000; fill-opacity: 0.5; }
 .tag-tunnel { stroke-dasharray: 3,3; }
 
 .casing.tag-railway-rail.tag-bridge { stroke: #000; stroke-width: 4;  }
 .stroke.tag-railway-rail.tag-bridge { stroke: #FFF; stroke-width: 2;  }
+
+.stroke.tag-highway.tag-bridge { stroke: #FFF; }
+
+.casing.tag-bridge.tag-highway-path, .casing.tag-bridge.tag-highway-pedestrian, .casing.tag-bridge.tag-highway-footway { stroke: #000; stroke-width: 3px; }
+
+.stroke.tag-power { stroke: #000; }
+.casing.tag-power { stroke: #000; stroke-width: 4; stroke-dasharray: 4, 60;} /* značit skutečné sloupy */

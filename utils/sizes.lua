@@ -8,7 +8,7 @@ for zoom=12,15 do
 	print '| stroke size | resulting size |'
 	print '| --- | --- |'
 	for px=1,15 do
-		print('| '..(px * math.pow(1.5, 12-zoom) )..' | '..px..'|')
+		print('| '..string.format('%0.2f', px * math.pow(1.5, 12-zoom) )..' | '..px..' |')
 	end
 	print ''
 end

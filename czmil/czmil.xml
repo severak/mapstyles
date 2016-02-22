@@ -2,14 +2,14 @@
 <rendertheme xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://mapsforge.org/renderTheme ../renderTheme.xsd" version="1" map-background="#F8F8F8">
 <rule e="any" k="*" v="*" zoom-max="12" >
 <!-- landuse -->
-<rule e="way" k="natural|landuse" v="forest|wood">
+<rule e="way" k="natural|landuse|amenity" v="forest|wood|grave_yard">
 	<area fill="#E8EEC3" stroke-width="0.000"/>
-	<line stroke="#000000" stroke-width="1.000" stroke-dasharray="1, 4"/>
+	<line stroke="#000000" stroke-width="1.000" stroke-dasharray="1, 6"/>
 </rule>
 
-<rule e="way" k="landuse" v="grass">
+<rule e="way" k="landuse|leisure|sport" v="grass|meadow|vineyard|orchad|village_green||park|golf">
 	<area fill="#F1F6E7" stroke-width="0.000"/>
-	<line stroke="#000000" stroke-width="1.000" stroke-dasharray="1, 4"/>
+	<line stroke="#000000" stroke-width="1.000" stroke-dasharray="1, 6"/>
 </rule>
 
 <rule e="way" k="landuse" v="residential">
@@ -17,8 +17,22 @@
 	<line stroke="#000000" stroke-width="1.000"/>
 </rule>
 
+<!-- contours -->
+<rule e="way" k="contour_ext" v="elevation_major">
+	<line stroke="#E99222" stroke-width="2.000"/>
+</rule>
+
+<rule e="way" k="contour_ext" v="elevation_medium|elevation_minor" zoom-min="14">
+	<line stroke="#E99222" stroke-width="1.000"/>
+</rule>
+
+<!-- water -->
 <rule e="way" k="waterway" v="stream|canal|ditch|drain" zoom-min="14">
 	<line stroke="#1980AA" stroke-width="1.000"/>
+</rule>
+
+<rule e="way" k="waterway" v="river" zoom-min="8">
+	<line stroke="#1980AA" stroke-width="2.000"/>
 </rule>
 
 <rule e="way" k="natural|landuse" v="water|reservoir">
@@ -34,10 +48,30 @@
 	<area fill="#000000" stroke-width="0.000"/>
 </rule>
 
+<!-- barriers -->
+<rule e="way" k="barrier" v="city_wall|fence|retaining_wall|wall">
+	<line stroke="#000000" stroke-width="1.000"/>
+	<line stroke="#000000" stroke-width="3.000" stroke-dasharray="1, 4" stroke-linecap="butt"/>
+</rule>
+
+<!-- power lines -->
+<rule e="way" k="power" v="line" zoom-min="10">
+	<line stroke="#000000" stroke-width="1.000"/>
+</rule>
+<rule e="node" k="power" v="tower" zoom-min="10">
+	<circle radius="3" stroke="#000000" stroke-width="1.000"/>
+</rule>
+	
+<!-- airports -->
+<rule e="way" k="aeroway" v="*" zoom-min="10">
+	<line stroke="#000000" stroke-width="1.000"/>
+</rule>
+
 <!-- ways -->
 <rule e="way" k="tunnel" v="~|no">
 <rule e="way" k="bridge" v="~|no">
 <rule e="way" k="area" v="~|no">
+
 	<!-- casing -->
 	<rule e="way" k="highway" v="track|path|bridleway" zoom-min="14">
 		<line stroke="#000000" stroke-width="1.000" stroke-dasharray="12, 4"/>
@@ -61,12 +95,13 @@
 	</rule>
 	
 
-	<rule e="way" k="railway" v="rail">
+	<rule e="way" k="railway" v="rail|narrow_gauge">
 		<rule e="way" k="service" v="yard">
+			<!-- todo rozfungovat vedlejsi koleje -->
 			<line stroke="#000000" stroke-width="1.000" stroke-linecap="butt"/>
 		</rule>
 		<rule e="way" k="service" v="mainline|~">
-			<line stroke="#000000" stroke-width="3.000" stroke-linecap="butt"/>
+			<line stroke="#000000" stroke-width="2.000" stroke-linecap="butt"/>
 		</rule>
 	</rule>
 </rule>
@@ -81,30 +116,26 @@
 		<line stroke="#FFFFFF" stroke-width="2.000" stroke-linecap="butt"/>
 	</rule>
 	
-	<rule e="way" k="railway" v="rail">
+	<rule e="way" k="railway" v="rail|narrow_gauge">
 		<line stroke="#000000" stroke-width="5.000" stroke-linecap="butt"/>
 		<line stroke="#FFFFFF" stroke-width="3.000" stroke-linecap="butt"/>
 	</rule>
 </rule>
 
-<!-- labels -->
 
-<rule e="way" k="waterway" v="river" zoom-min="13">
-	<pathText k="name" font-style="bold" font-size="12" fill="#1980AA"/>
-</rule>
 
 </rule>
 
 <rule e="any" k="*" v="*" zoom-min="13" zoom-max="13" >
 <!-- landuse -->
-<rule e="way" k="natural|landuse" v="forest|wood">
+<rule e="way" k="natural|landuse|amenity" v="forest|wood|grave_yard">
 	<area fill="#E8EEC3" stroke-width="0.000"/>
-	<line stroke="#000000" stroke-width="0.667" stroke-dasharray="1, 4"/>
+	<line stroke="#000000" stroke-width="0.667" stroke-dasharray="1, 6"/>
 </rule>
 
-<rule e="way" k="landuse" v="grass">
+<rule e="way" k="landuse|leisure|sport" v="grass|meadow|vineyard|orchad|village_green||park|golf">
 	<area fill="#F1F6E7" stroke-width="0.000"/>
-	<line stroke="#000000" stroke-width="0.667" stroke-dasharray="1, 4"/>
+	<line stroke="#000000" stroke-width="0.667" stroke-dasharray="1, 6"/>
 </rule>
 
 <rule e="way" k="landuse" v="residential">
@@ -112,8 +143,22 @@
 	<line stroke="#000000" stroke-width="0.667"/>
 </rule>
 
+<!-- contours -->
+<rule e="way" k="contour_ext" v="elevation_major">
+	<line stroke="#E99222" stroke-width="1.333"/>
+</rule>
+
+<rule e="way" k="contour_ext" v="elevation_medium|elevation_minor" zoom-min="14">
+	<line stroke="#E99222" stroke-width="0.667"/>
+</rule>
+
+<!-- water -->
 <rule e="way" k="waterway" v="stream|canal|ditch|drain" zoom-min="14">
 	<line stroke="#1980AA" stroke-width="0.667"/>
+</rule>
+
+<rule e="way" k="waterway" v="river" zoom-min="8">
+	<line stroke="#1980AA" stroke-width="1.333"/>
 </rule>
 
 <rule e="way" k="natural|landuse" v="water|reservoir">
@@ -129,10 +174,30 @@
 	<area fill="#000000" stroke-width="0.000"/>
 </rule>
 
+<!-- barriers -->
+<rule e="way" k="barrier" v="city_wall|fence|retaining_wall|wall">
+	<line stroke="#000000" stroke-width="0.667"/>
+	<line stroke="#000000" stroke-width="2.000" stroke-dasharray="1, 4" stroke-linecap="butt"/>
+</rule>
+
+<!-- power lines -->
+<rule e="way" k="power" v="line" zoom-min="10">
+	<line stroke="#000000" stroke-width="0.667"/>
+</rule>
+<rule e="node" k="power" v="tower" zoom-min="10">
+	<circle radius="3" stroke="#000000" stroke-width="0.667"/>
+</rule>
+	
+<!-- airports -->
+<rule e="way" k="aeroway" v="*" zoom-min="10">
+	<line stroke="#000000" stroke-width="0.667"/>
+</rule>
+
 <!-- ways -->
 <rule e="way" k="tunnel" v="~|no">
 <rule e="way" k="bridge" v="~|no">
 <rule e="way" k="area" v="~|no">
+
 	<!-- casing -->
 	<rule e="way" k="highway" v="track|path|bridleway" zoom-min="14">
 		<line stroke="#000000" stroke-width="0.667" stroke-dasharray="12, 4"/>
@@ -156,12 +221,13 @@
 	</rule>
 	
 
-	<rule e="way" k="railway" v="rail">
+	<rule e="way" k="railway" v="rail|narrow_gauge">
 		<rule e="way" k="service" v="yard">
+			<!-- todo rozfungovat vedlejsi koleje -->
 			<line stroke="#000000" stroke-width="0.667" stroke-linecap="butt"/>
 		</rule>
 		<rule e="way" k="service" v="mainline|~">
-			<line stroke="#000000" stroke-width="2.000" stroke-linecap="butt"/>
+			<line stroke="#000000" stroke-width="1.333" stroke-linecap="butt"/>
 		</rule>
 	</rule>
 </rule>
@@ -176,30 +242,26 @@
 		<line stroke="#FFFFFF" stroke-width="1.333" stroke-linecap="butt"/>
 	</rule>
 	
-	<rule e="way" k="railway" v="rail">
+	<rule e="way" k="railway" v="rail|narrow_gauge">
 		<line stroke="#000000" stroke-width="3.333" stroke-linecap="butt"/>
 		<line stroke="#FFFFFF" stroke-width="2.000" stroke-linecap="butt"/>
 	</rule>
 </rule>
 
-<!-- labels -->
 
-<rule e="way" k="waterway" v="river" zoom-min="13">
-	<pathText k="name" font-style="bold" font-size="12" fill="#1980AA"/>
-</rule>
 
 </rule>
 
 <rule e="any" k="*" v="*" zoom-min="14" zoom-max="14" >
 <!-- landuse -->
-<rule e="way" k="natural|landuse" v="forest|wood">
+<rule e="way" k="natural|landuse|amenity" v="forest|wood|grave_yard">
 	<area fill="#E8EEC3" stroke-width="0.000"/>
-	<line stroke="#000000" stroke-width="0.444" stroke-dasharray="1, 4"/>
+	<line stroke="#000000" stroke-width="0.444" stroke-dasharray="1, 6"/>
 </rule>
 
-<rule e="way" k="landuse" v="grass">
+<rule e="way" k="landuse|leisure|sport" v="grass|meadow|vineyard|orchad|village_green||park|golf">
 	<area fill="#F1F6E7" stroke-width="0.000"/>
-	<line stroke="#000000" stroke-width="0.444" stroke-dasharray="1, 4"/>
+	<line stroke="#000000" stroke-width="0.444" stroke-dasharray="1, 6"/>
 </rule>
 
 <rule e="way" k="landuse" v="residential">
@@ -207,8 +269,22 @@
 	<line stroke="#000000" stroke-width="0.444"/>
 </rule>
 
+<!-- contours -->
+<rule e="way" k="contour_ext" v="elevation_major">
+	<line stroke="#E99222" stroke-width="0.889"/>
+</rule>
+
+<rule e="way" k="contour_ext" v="elevation_medium|elevation_minor" zoom-min="14">
+	<line stroke="#E99222" stroke-width="0.444"/>
+</rule>
+
+<!-- water -->
 <rule e="way" k="waterway" v="stream|canal|ditch|drain" zoom-min="14">
 	<line stroke="#1980AA" stroke-width="0.444"/>
+</rule>
+
+<rule e="way" k="waterway" v="river" zoom-min="8">
+	<line stroke="#1980AA" stroke-width="0.889"/>
 </rule>
 
 <rule e="way" k="natural|landuse" v="water|reservoir">
@@ -224,10 +300,30 @@
 	<area fill="#000000" stroke-width="0.000"/>
 </rule>
 
+<!-- barriers -->
+<rule e="way" k="barrier" v="city_wall|fence|retaining_wall|wall">
+	<line stroke="#000000" stroke-width="0.444"/>
+	<line stroke="#000000" stroke-width="1.333" stroke-dasharray="1, 4" stroke-linecap="butt"/>
+</rule>
+
+<!-- power lines -->
+<rule e="way" k="power" v="line" zoom-min="10">
+	<line stroke="#000000" stroke-width="0.444"/>
+</rule>
+<rule e="node" k="power" v="tower" zoom-min="10">
+	<circle radius="3" stroke="#000000" stroke-width="0.444"/>
+</rule>
+	
+<!-- airports -->
+<rule e="way" k="aeroway" v="*" zoom-min="10">
+	<line stroke="#000000" stroke-width="0.444"/>
+</rule>
+
 <!-- ways -->
 <rule e="way" k="tunnel" v="~|no">
 <rule e="way" k="bridge" v="~|no">
 <rule e="way" k="area" v="~|no">
+
 	<!-- casing -->
 	<rule e="way" k="highway" v="track|path|bridleway" zoom-min="14">
 		<line stroke="#000000" stroke-width="0.444" stroke-dasharray="12, 4"/>
@@ -251,12 +347,13 @@
 	</rule>
 	
 
-	<rule e="way" k="railway" v="rail">
+	<rule e="way" k="railway" v="rail|narrow_gauge">
 		<rule e="way" k="service" v="yard">
+			<!-- todo rozfungovat vedlejsi koleje -->
 			<line stroke="#000000" stroke-width="0.444" stroke-linecap="butt"/>
 		</rule>
 		<rule e="way" k="service" v="mainline|~">
-			<line stroke="#000000" stroke-width="1.333" stroke-linecap="butt"/>
+			<line stroke="#000000" stroke-width="0.889" stroke-linecap="butt"/>
 		</rule>
 	</rule>
 </rule>
@@ -271,30 +368,26 @@
 		<line stroke="#FFFFFF" stroke-width="0.889" stroke-linecap="butt"/>
 	</rule>
 	
-	<rule e="way" k="railway" v="rail">
+	<rule e="way" k="railway" v="rail|narrow_gauge">
 		<line stroke="#000000" stroke-width="2.222" stroke-linecap="butt"/>
 		<line stroke="#FFFFFF" stroke-width="1.333" stroke-linecap="butt"/>
 	</rule>
 </rule>
 
-<!-- labels -->
 
-<rule e="way" k="waterway" v="river" zoom-min="13">
-	<pathText k="name" font-style="bold" font-size="12" fill="#1980AA"/>
-</rule>
 
 </rule>
 
 <rule e="any" k="*" v="*" zoom-min="15" >
 <!-- landuse -->
-<rule e="way" k="natural|landuse" v="forest|wood">
+<rule e="way" k="natural|landuse|amenity" v="forest|wood|grave_yard">
 	<area fill="#E8EEC3" stroke-width="0.000"/>
-	<line stroke="#000000" stroke-width="0.296" stroke-dasharray="1, 4"/>
+	<line stroke="#000000" stroke-width="0.296" stroke-dasharray="1, 6"/>
 </rule>
 
-<rule e="way" k="landuse" v="grass">
+<rule e="way" k="landuse|leisure|sport" v="grass|meadow|vineyard|orchad|village_green||park|golf">
 	<area fill="#F1F6E7" stroke-width="0.000"/>
-	<line stroke="#000000" stroke-width="0.296" stroke-dasharray="1, 4"/>
+	<line stroke="#000000" stroke-width="0.296" stroke-dasharray="1, 6"/>
 </rule>
 
 <rule e="way" k="landuse" v="residential">
@@ -302,8 +395,22 @@
 	<line stroke="#000000" stroke-width="0.296"/>
 </rule>
 
+<!-- contours -->
+<rule e="way" k="contour_ext" v="elevation_major">
+	<line stroke="#E99222" stroke-width="0.593"/>
+</rule>
+
+<rule e="way" k="contour_ext" v="elevation_medium|elevation_minor" zoom-min="14">
+	<line stroke="#E99222" stroke-width="0.296"/>
+</rule>
+
+<!-- water -->
 <rule e="way" k="waterway" v="stream|canal|ditch|drain" zoom-min="14">
 	<line stroke="#1980AA" stroke-width="0.296"/>
+</rule>
+
+<rule e="way" k="waterway" v="river" zoom-min="8">
+	<line stroke="#1980AA" stroke-width="0.593"/>
 </rule>
 
 <rule e="way" k="natural|landuse" v="water|reservoir">
@@ -319,10 +426,30 @@
 	<area fill="#000000" stroke-width="0.000"/>
 </rule>
 
+<!-- barriers -->
+<rule e="way" k="barrier" v="city_wall|fence|retaining_wall|wall">
+	<line stroke="#000000" stroke-width="0.296"/>
+	<line stroke="#000000" stroke-width="0.889" stroke-dasharray="1, 4" stroke-linecap="butt"/>
+</rule>
+
+<!-- power lines -->
+<rule e="way" k="power" v="line" zoom-min="10">
+	<line stroke="#000000" stroke-width="0.296"/>
+</rule>
+<rule e="node" k="power" v="tower" zoom-min="10">
+	<circle radius="3" stroke="#000000" stroke-width="0.296"/>
+</rule>
+	
+<!-- airports -->
+<rule e="way" k="aeroway" v="*" zoom-min="10">
+	<line stroke="#000000" stroke-width="0.296"/>
+</rule>
+
 <!-- ways -->
 <rule e="way" k="tunnel" v="~|no">
 <rule e="way" k="bridge" v="~|no">
 <rule e="way" k="area" v="~|no">
+
 	<!-- casing -->
 	<rule e="way" k="highway" v="track|path|bridleway" zoom-min="14">
 		<line stroke="#000000" stroke-width="0.296" stroke-dasharray="12, 4"/>
@@ -346,12 +473,13 @@
 	</rule>
 	
 
-	<rule e="way" k="railway" v="rail">
+	<rule e="way" k="railway" v="rail|narrow_gauge">
 		<rule e="way" k="service" v="yard">
+			<!-- todo rozfungovat vedlejsi koleje -->
 			<line stroke="#000000" stroke-width="0.296" stroke-linecap="butt"/>
 		</rule>
 		<rule e="way" k="service" v="mainline|~">
-			<line stroke="#000000" stroke-width="0.889" stroke-linecap="butt"/>
+			<line stroke="#000000" stroke-width="0.593" stroke-linecap="butt"/>
 		</rule>
 	</rule>
 </rule>
@@ -366,18 +494,41 @@
 		<line stroke="#FFFFFF" stroke-width="0.593" stroke-linecap="butt"/>
 	</rule>
 	
-	<rule e="way" k="railway" v="rail">
+	<rule e="way" k="railway" v="rail|narrow_gauge">
 		<line stroke="#000000" stroke-width="1.481" stroke-linecap="butt"/>
 		<line stroke="#FFFFFF" stroke-width="0.889" stroke-linecap="butt"/>
 	</rule>
 </rule>
 
+
+
+</rule>
+
 <!-- labels -->
 
 <rule e="way" k="waterway" v="river" zoom-min="13">
-	<pathText k="name" font-style="bold" font-size="12" fill="#1980AA"/>
+	<pathText k="name" font-style="bold" font-size="12" fill="#1980AA" stroke="#FFFFFF" stroke-width="1"/>
 </rule>
 
+<rule e="way" k="waterway" v="river" zoom-min="13">
+	<pathText k="name" font-style="bold" font-size="12" fill="#1980AA" stroke="#FFFFFF" stroke-width="1"/>
 </rule>
 
-</rendertheme>
+<rule e="node" k="place" v="hamlet" zoom-min="12">
+	<caption k="name" font-style="bold" font-size="13" fill="#FFFFFF" stroke="#000000" stroke-width="2.0" />
+</rule>
+<rule e="node" k="place" v="suburb|village" zoom-min="10">
+	<caption k="name" font-style="bold" font-size="15" fill="#FFFFFF" stroke="#000000" stroke-width="2.0" />
+</rule>
+<rule e="node" k="place" v="town" zoom-min="9">
+	<caption k="name" font-style="bold" font-size="17" fill="#FFFFFF" stroke="#000000" stroke-width="2.0" />
+</rule>
+<rule e="node" k="place" v="island" zoom-min="10">
+	<caption k="name" font-style="bold" font-size="20" fill="#FFFFFF" stroke="#000000" stroke-width="2.0" />
+</rule>
+<rule e="node" k="place" v="city" zoom-max="15">
+	<caption k="name" font-style="bold" font-size="25" fill="#FFFFFF" stroke="#000000" stroke-width="2.0" />
+</rule>
+<rule e="node" k="place" v="country" zoom-max="6">
+	<caption k="name" font-style="bold" font-size="25" fill="#FFFFFF" stroke="#000000" stroke-width="2.0" />
+</rule></rendertheme>

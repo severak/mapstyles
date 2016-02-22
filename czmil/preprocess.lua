@@ -43,5 +43,6 @@ for zoom=12,15 do
 	outp:write('</rule>\n\n')
 end
 
+outp:write(read_file('tail.txt'))
 outp:write(footer)
 outp:close()

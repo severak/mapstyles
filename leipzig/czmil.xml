@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rendertheme xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://mapsforge.org/renderTheme ../renderTheme.xsd" version="1" map-background="#F8F8F8">
+<rule e="any" k="*" v="*" zoom-max="12" >
+<!-- landuse -->
+<rule e="way" k="natural|landuse|amenity" v="forest|wood|grave_yard">
+	<area fill="#90C987" stroke-width="0.000"/>
+</rule>
+
+<rule e="way" k="landuse|leisure|sport" v="grass|meadow|vineyard|orchad|village_green||park|golf">
+	<area fill="#CAE0AB" stroke-width="0.000"/>
+</rule>
+
+<!-- contours -->
+<!-- <rule e="way" k="contour_ext" v="elevation_major">
+	<line stroke="#999999" stroke-width="2.000"/>
+</rule>
+
+<rule e="way" k="contour_ext" v="elevation_medium|elevation_minor" zoom-min="14">
+	<line stroke="#999999" stroke-width="1.000"/>
+</rule> -->
+
+<!-- water -->
+<rule e="way" k="waterway" v="stream|canal|ditch|drain" zoom-min="14">
+	<line stroke="#1965B0" stroke-width="1.000"/>
+</rule>
+
+<rule e="way" k="waterway" v="river" zoom-min="8">
+	<line stroke="#1965B0" stroke-width="2.000"/>
+</rule>
+
+<rule e="way" k="natural|landuse" v="water|reservoir">
+	<area fill="#7BAFDE" stroke="#1965B0" stroke-width="1.000"/>
+</rule>
+
+<rule e="way" k="waterway" v="riverbank">
+	<area fill="#7BAFDE" stroke="#1965B0" stroke-width="1.000"/>
+</rule>
+
+<!-- buildings -->
+<rule e="way" k="building" v="*">
+	<area fill="#D6C1DE" stroke-width="0.000"/>
+</rule>
+
+<!-- power lines -->
+<rule e="way" k="power" v="line" zoom-min="10">
+	<line stroke="#555555" stroke-width="1.000"/>
+	<line stroke="#555555" stroke-width="3.000" stroke-dasharray="1, 40" stroke-linecap="round"/>
+</rule>
+	
+<!-- airports -->
+<rule e="way" k="aeroway" v="*" zoom-min="10">
+	<area fill="#FFFFFF" stroke-width="0.000"/>
+	<line stroke="#555555" stroke-width="1.000"/>
+</rule>
+
+<!-- ways -->
+<rule e="way" k="tunnel" v="~|no">
+
+	<!-- single line -->
+	<rule e="way" k="highway" v="track|path|bridleway" zoom-min="13">
+		<line stroke="#555555" stroke-width="1.000" stroke-dasharray="12, 4"/>
+	</rule>
+
+	<!-- casing -->
+	
+	<rule e="way" k="highway" v="footway|pedestrian|steps" zoom-min="14">
+		<line stroke="#555555" stroke-width="4.000" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="residential|road|service|unclassified" zoom-min="14">
+		<line stroke="#555555" stroke-width="6.000" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="motorway|trunk|primary|secondary|tertiary|motorway_link|trunk_link|primary_link|secondary_link|tertiary_link">
+		<line stroke="#555555" stroke-width="8.000" stroke-linecap="butt"/>
+	</rule>
+
+	<!-- stroke -->
+	<rule e="way" k="highway" v="footway|pedestrian|steps" zoom-min="14">
+		<line stroke="#FFFFFF" stroke-width="2.000" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="residential|road|service|unclassified" zoom-min="14">
+		<line stroke="#FFFFFF" stroke-width="4.000" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="motorway|trunk|primary|secondary|tertiary|motorway_link|trunk_link|primary_link|secondary_link|tertiary_link">
+		<line stroke="#F7EE55" stroke-width="6.000" stroke-linecap="butt"/>
+	</rule>
+	
+	<!-- steps decoration -->
+	<rule e="way" k="highway" v="steps" zoom-min="14">
+		<line stroke="#555555" stroke-width="4.000" stroke-dasharray="1, 3" stroke-linecap="butt"/>
+	</rule>
+
+	<rule e="way" k="railway" v="rail|narrow_gauge">
+		<line stroke="#111111" stroke-width="3.000" stroke-linecap="butt"/>
+		<line stroke="#FFFFFF" stroke-width="2.000" stroke-linecap="butt"  stroke-dasharray="12,12"/>
+	</rule>
+
+	<rule e="way" k="railway" v="tram" zoom-min="15">
+		<line stroke="#DC050C" stroke-width="1.000" />
+	</rule>
+</rule>
+
+
+
+<rule e="way" k="tunnel" v="yes">
+	<rule e="way" k="highway" v="*">
+		<!-- hack na skryti silnicnich tunelu -->
+		<line stroke="#FFFFFF" stroke-width="8.000" stroke-linecap="butt"/>
+	</rule>
+</rule>
+
+<!-- bridges -->
+
+
+
+</rule>
+
+<rule e="any" k="*" v="*" zoom-min="13" zoom-max="13" >
+<!-- landuse -->
+<rule e="way" k="natural|landuse|amenity" v="forest|wood|grave_yard">
+	<area fill="#90C987" stroke-width="0.000"/>
+</rule>
+
+<rule e="way" k="landuse|leisure|sport" v="grass|meadow|vineyard|orchad|village_green||park|golf">
+	<area fill="#CAE0AB" stroke-width="0.000"/>
+</rule>
+
+<!-- contours -->
+<!-- <rule e="way" k="contour_ext" v="elevation_major">
+	<line stroke="#999999" stroke-width="1.333"/>
+</rule>
+
+<rule e="way" k="contour_ext" v="elevation_medium|elevation_minor" zoom-min="14">
+	<line stroke="#999999" stroke-width="0.667"/>
+</rule> -->
+
+<!-- water -->
+<rule e="way" k="waterway" v="stream|canal|ditch|drain" zoom-min="14">
+	<line stroke="#1965B0" stroke-width="0.667"/>
+</rule>
+
+<rule e="way" k="waterway" v="river" zoom-min="8">
+	<line stroke="#1965B0" stroke-width="1.333"/>
+</rule>
+
+<rule e="way" k="natural|landuse" v="water|reservoir">
+	<area fill="#7BAFDE" stroke="#1965B0" stroke-width="0.667"/>
+</rule>
+
+<rule e="way" k="waterway" v="riverbank">
+	<area fill="#7BAFDE" stroke="#1965B0" stroke-width="0.667"/>
+</rule>
+
+<!-- buildings -->
+<rule e="way" k="building" v="*">
+	<area fill="#D6C1DE" stroke-width="0.000"/>
+</rule>
+
+<!-- power lines -->
+<rule e="way" k="power" v="line" zoom-min="10">
+	<line stroke="#555555" stroke-width="0.667"/>
+	<line stroke="#555555" stroke-width="2.000" stroke-dasharray="1, 40" stroke-linecap="round"/>
+</rule>
+	
+<!-- airports -->
+<rule e="way" k="aeroway" v="*" zoom-min="10">
+	<area fill="#FFFFFF" stroke-width="0.000"/>
+	<line stroke="#555555" stroke-width="0.667"/>
+</rule>
+
+<!-- ways -->
+<rule e="way" k="tunnel" v="~|no">
+
+	<!-- single line -->
+	<rule e="way" k="highway" v="track|path|bridleway" zoom-min="13">
+		<line stroke="#555555" stroke-width="0.667" stroke-dasharray="12, 4"/>
+	</rule>
+
+	<!-- casing -->
+	
+	<rule e="way" k="highway" v="footway|pedestrian|steps" zoom-min="14">
+		<line stroke="#555555" stroke-width="2.667" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="residential|road|service|unclassified" zoom-min="14">
+		<line stroke="#555555" stroke-width="4.000" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="motorway|trunk|primary|secondary|tertiary|motorway_link|trunk_link|primary_link|secondary_link|tertiary_link">
+		<line stroke="#555555" stroke-width="5.333" stroke-linecap="butt"/>
+	</rule>
+
+	<!-- stroke -->
+	<rule e="way" k="highway" v="footway|pedestrian|steps" zoom-min="14">
+		<line stroke="#FFFFFF" stroke-width="1.333" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="residential|road|service|unclassified" zoom-min="14">
+		<line stroke="#FFFFFF" stroke-width="2.667" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="motorway|trunk|primary|secondary|tertiary|motorway_link|trunk_link|primary_link|secondary_link|tertiary_link">
+		<line stroke="#F7EE55" stroke-width="4.000" stroke-linecap="butt"/>
+	</rule>
+	
+	<!-- steps decoration -->
+	<rule e="way" k="highway" v="steps" zoom-min="14">
+		<line stroke="#555555" stroke-width="2.667" stroke-dasharray="1, 3" stroke-linecap="butt"/>
+	</rule>
+
+	<rule e="way" k="railway" v="rail|narrow_gauge">
+		<line stroke="#111111" stroke-width="2.000" stroke-linecap="butt"/>
+		<line stroke="#FFFFFF" stroke-width="1.333" stroke-linecap="butt"  stroke-dasharray="12,12"/>
+	</rule>
+
+	<rule e="way" k="railway" v="tram" zoom-min="15">
+		<line stroke="#DC050C" stroke-width="0.667" />
+	</rule>
+</rule>
+
+
+
+<rule e="way" k="tunnel" v="yes">
+	<rule e="way" k="highway" v="*">
+		<!-- hack na skryti silnicnich tunelu -->
+		<line stroke="#FFFFFF" stroke-width="5.333" stroke-linecap="butt"/>
+	</rule>
+</rule>
+
+<!-- bridges -->
+
+
+
+</rule>
+
+<rule e="any" k="*" v="*" zoom-min="14" zoom-max="14" >
+<!-- landuse -->
+<rule e="way" k="natural|landuse|amenity" v="forest|wood|grave_yard">
+	<area fill="#90C987" stroke-width="0.000"/>
+</rule>
+
+<rule e="way" k="landuse|leisure|sport" v="grass|meadow|vineyard|orchad|village_green||park|golf">
+	<area fill="#CAE0AB" stroke-width="0.000"/>
+</rule>
+
+<!-- contours -->
+<!-- <rule e="way" k="contour_ext" v="elevation_major">
+	<line stroke="#999999" stroke-width="0.889"/>
+</rule>
+
+<rule e="way" k="contour_ext" v="elevation_medium|elevation_minor" zoom-min="14">
+	<line stroke="#999999" stroke-width="0.444"/>
+</rule> -->
+
+<!-- water -->
+<rule e="way" k="waterway" v="stream|canal|ditch|drain" zoom-min="14">
+	<line stroke="#1965B0" stroke-width="0.444"/>
+</rule>
+
+<rule e="way" k="waterway" v="river" zoom-min="8">
+	<line stroke="#1965B0" stroke-width="0.889"/>
+</rule>
+
+<rule e="way" k="natural|landuse" v="water|reservoir">
+	<area fill="#7BAFDE" stroke="#1965B0" stroke-width="0.444"/>
+</rule>
+
+<rule e="way" k="waterway" v="riverbank">
+	<area fill="#7BAFDE" stroke="#1965B0" stroke-width="0.444"/>
+</rule>
+
+<!-- buildings -->
+<rule e="way" k="building" v="*">
+	<area fill="#D6C1DE" stroke-width="0.000"/>
+</rule>
+
+<!-- power lines -->
+<rule e="way" k="power" v="line" zoom-min="10">
+	<line stroke="#555555" stroke-width="0.444"/>
+	<line stroke="#555555" stroke-width="1.333" stroke-dasharray="1, 40" stroke-linecap="round"/>
+</rule>
+	
+<!-- airports -->
+<rule e="way" k="aeroway" v="*" zoom-min="10">
+	<area fill="#FFFFFF" stroke-width="0.000"/>
+	<line stroke="#555555" stroke-width="0.444"/>
+</rule>
+
+<!-- ways -->
+<rule e="way" k="tunnel" v="~|no">
+
+	<!-- single line -->
+	<rule e="way" k="highway" v="track|path|bridleway" zoom-min="13">
+		<line stroke="#555555" stroke-width="0.444" stroke-dasharray="12, 4"/>
+	</rule>
+
+	<!-- casing -->
+	
+	<rule e="way" k="highway" v="footway|pedestrian|steps" zoom-min="14">
+		<line stroke="#555555" stroke-width="1.778" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="residential|road|service|unclassified" zoom-min="14">
+		<line stroke="#555555" stroke-width="2.667" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="motorway|trunk|primary|secondary|tertiary|motorway_link|trunk_link|primary_link|secondary_link|tertiary_link">
+		<line stroke="#555555" stroke-width="3.556" stroke-linecap="butt"/>
+	</rule>
+
+	<!-- stroke -->
+	<rule e="way" k="highway" v="footway|pedestrian|steps" zoom-min="14">
+		<line stroke="#FFFFFF" stroke-width="0.889" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="residential|road|service|unclassified" zoom-min="14">
+		<line stroke="#FFFFFF" stroke-width="1.778" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="motorway|trunk|primary|secondary|tertiary|motorway_link|trunk_link|primary_link|secondary_link|tertiary_link">
+		<line stroke="#F7EE55" stroke-width="2.667" stroke-linecap="butt"/>
+	</rule>
+	
+	<!-- steps decoration -->
+	<rule e="way" k="highway" v="steps" zoom-min="14">
+		<line stroke="#555555" stroke-width="1.778" stroke-dasharray="1, 3" stroke-linecap="butt"/>
+	</rule>
+
+	<rule e="way" k="railway" v="rail|narrow_gauge">
+		<line stroke="#111111" stroke-width="1.333" stroke-linecap="butt"/>
+		<line stroke="#FFFFFF" stroke-width="0.889" stroke-linecap="butt"  stroke-dasharray="12,12"/>
+	</rule>
+
+	<rule e="way" k="railway" v="tram" zoom-min="15">
+		<line stroke="#DC050C" stroke-width="0.444" />
+	</rule>
+</rule>
+
+
+
+<rule e="way" k="tunnel" v="yes">
+	<rule e="way" k="highway" v="*">
+		<!-- hack na skryti silnicnich tunelu -->
+		<line stroke="#FFFFFF" stroke-width="3.556" stroke-linecap="butt"/>
+	</rule>
+</rule>
+
+<!-- bridges -->
+
+
+
+</rule>
+
+<rule e="any" k="*" v="*" zoom-min="15" >
+<!-- landuse -->
+<rule e="way" k="natural|landuse|amenity" v="forest|wood|grave_yard">
+	<area fill="#90C987" stroke-width="0.000"/>
+</rule>
+
+<rule e="way" k="landuse|leisure|sport" v="grass|meadow|vineyard|orchad|village_green||park|golf">
+	<area fill="#CAE0AB" stroke-width="0.000"/>
+</rule>
+
+<!-- contours -->
+<!-- <rule e="way" k="contour_ext" v="elevation_major">
+	<line stroke="#999999" stroke-width="0.593"/>
+</rule>
+
+<rule e="way" k="contour_ext" v="elevation_medium|elevation_minor" zoom-min="14">
+	<line stroke="#999999" stroke-width="0.296"/>
+</rule> -->
+
+<!-- water -->
+<rule e="way" k="waterway" v="stream|canal|ditch|drain" zoom-min="14">
+	<line stroke="#1965B0" stroke-width="0.296"/>
+</rule>
+
+<rule e="way" k="waterway" v="river" zoom-min="8">
+	<line stroke="#1965B0" stroke-width="0.593"/>
+</rule>
+
+<rule e="way" k="natural|landuse" v="water|reservoir">
+	<area fill="#7BAFDE" stroke="#1965B0" stroke-width="0.296"/>
+</rule>
+
+<rule e="way" k="waterway" v="riverbank">
+	<area fill="#7BAFDE" stroke="#1965B0" stroke-width="0.296"/>
+</rule>
+
+<!-- buildings -->
+<rule e="way" k="building" v="*">
+	<area fill="#D6C1DE" stroke-width="0.000"/>
+</rule>
+
+<!-- power lines -->
+<rule e="way" k="power" v="line" zoom-min="10">
+	<line stroke="#555555" stroke-width="0.296"/>
+	<line stroke="#555555" stroke-width="0.889" stroke-dasharray="1, 40" stroke-linecap="round"/>
+</rule>
+	
+<!-- airports -->
+<rule e="way" k="aeroway" v="*" zoom-min="10">
+	<area fill="#FFFFFF" stroke-width="0.000"/>
+	<line stroke="#555555" stroke-width="0.296"/>
+</rule>
+
+<!-- ways -->
+<rule e="way" k="tunnel" v="~|no">
+
+	<!-- single line -->
+	<rule e="way" k="highway" v="track|path|bridleway" zoom-min="13">
+		<line stroke="#555555" stroke-width="0.296" stroke-dasharray="12, 4"/>
+	</rule>
+
+	<!-- casing -->
+	
+	<rule e="way" k="highway" v="footway|pedestrian|steps" zoom-min="14">
+		<line stroke="#555555" stroke-width="1.185" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="residential|road|service|unclassified" zoom-min="14">
+		<line stroke="#555555" stroke-width="1.778" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="motorway|trunk|primary|secondary|tertiary|motorway_link|trunk_link|primary_link|secondary_link|tertiary_link">
+		<line stroke="#555555" stroke-width="2.370" stroke-linecap="butt"/>
+	</rule>
+
+	<!-- stroke -->
+	<rule e="way" k="highway" v="footway|pedestrian|steps" zoom-min="14">
+		<line stroke="#FFFFFF" stroke-width="0.593" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="residential|road|service|unclassified" zoom-min="14">
+		<line stroke="#FFFFFF" stroke-width="1.185" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="motorway|trunk|primary|secondary|tertiary|motorway_link|trunk_link|primary_link|secondary_link|tertiary_link">
+		<line stroke="#F7EE55" stroke-width="1.778" stroke-linecap="butt"/>
+	</rule>
+	
+	<!-- steps decoration -->
+	<rule e="way" k="highway" v="steps" zoom-min="14">
+		<line stroke="#555555" stroke-width="1.185" stroke-dasharray="1, 3" stroke-linecap="butt"/>
+	</rule>
+
+	<rule e="way" k="railway" v="rail|narrow_gauge">
+		<line stroke="#111111" stroke-width="0.889" stroke-linecap="butt"/>
+		<line stroke="#FFFFFF" stroke-width="0.593" stroke-linecap="butt"  stroke-dasharray="12,12"/>
+	</rule>
+
+	<rule e="way" k="railway" v="tram" zoom-min="15">
+		<line stroke="#DC050C" stroke-width="0.296" />
+	</rule>
+</rule>
+
+
+
+<rule e="way" k="tunnel" v="yes">
+	<rule e="way" k="highway" v="*">
+		<!-- hack na skryti silnicnich tunelu -->
+		<line stroke="#FFFFFF" stroke-width="2.370" stroke-linecap="butt"/>
+	</rule>
+</rule>
+
+<!-- bridges -->
+
+
+
+</rule>
+
+<rule e="way" k="highway" v="*" zoom-min="15">
+	<pathText k="name" font-style="bold" font-size="8" fill="#000000" stroke="#FFFFFF" stroke-width="2.0"  />
+</rule></rendertheme>

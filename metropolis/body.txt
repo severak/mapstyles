@@ -141,8 +141,10 @@
 	</rule>
 	
 	<rule e="way" k="railway" v="tram" zoom-min="15">
-		<line stroke="#555555" stroke-width="5" stroke-linecap="butt"/>
-		<line stroke="#FFFFFF" stroke-width="3" />
+    <rule e="way" k="highway" v="~|no">
+		  <line stroke="#555555" stroke-width="5" stroke-linecap="butt"/>
+		  <line stroke="#FFFFFF" stroke-width="3" />
+    </rule>
 		<line stroke="#DC050C" stroke-width="1" />
 	</rule>
 </rule>

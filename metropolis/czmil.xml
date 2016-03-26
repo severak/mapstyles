@@ -145,8 +145,10 @@
 	</rule>
 	
 	<rule e="way" k="railway" v="tram" zoom-min="15">
-		<line stroke="#555555" stroke-width="5.000" stroke-linecap="butt"/>
-		<line stroke="#FFFFFF" stroke-width="3.000" />
+    <rule e="way" k="highway" v="~|no">
+		  <line stroke="#555555" stroke-width="5.000" stroke-linecap="butt"/>
+		  <line stroke="#FFFFFF" stroke-width="3.000" />
+    </rule>
 		<line stroke="#DC050C" stroke-width="1.000" />
 	</rule>
 </rule>
@@ -298,8 +300,10 @@
 	</rule>
 	
 	<rule e="way" k="railway" v="tram" zoom-min="15">
-		<line stroke="#555555" stroke-width="3.333" stroke-linecap="butt"/>
-		<line stroke="#FFFFFF" stroke-width="2.000" />
+    <rule e="way" k="highway" v="~|no">
+		  <line stroke="#555555" stroke-width="3.333" stroke-linecap="butt"/>
+		  <line stroke="#FFFFFF" stroke-width="2.000" />
+    </rule>
 		<line stroke="#DC050C" stroke-width="0.667" />
 	</rule>
 </rule>
@@ -451,8 +455,10 @@
 	</rule>
 	
 	<rule e="way" k="railway" v="tram" zoom-min="15">
-		<line stroke="#555555" stroke-width="2.222" stroke-linecap="butt"/>
-		<line stroke="#FFFFFF" stroke-width="1.333" />
+    <rule e="way" k="highway" v="~|no">
+		  <line stroke="#555555" stroke-width="2.222" stroke-linecap="butt"/>
+		  <line stroke="#FFFFFF" stroke-width="1.333" />
+    </rule>
 		<line stroke="#DC050C" stroke-width="0.444" />
 	</rule>
 </rule>
@@ -604,8 +610,10 @@
 	</rule>
 	
 	<rule e="way" k="railway" v="tram" zoom-min="15">
-		<line stroke="#555555" stroke-width="1.481" stroke-linecap="butt"/>
-		<line stroke="#FFFFFF" stroke-width="0.889" />
+    <rule e="way" k="highway" v="~|no">
+		  <line stroke="#555555" stroke-width="1.481" stroke-linecap="butt"/>
+		  <line stroke="#FFFFFF" stroke-width="0.889" />
+    </rule>
 		<line stroke="#DC050C" stroke-width="0.296" />
 	</rule>
 </rule>
@@ -757,8 +765,10 @@
 	</rule>
 	
 	<rule e="way" k="railway" v="tram" zoom-min="15">
-		<line stroke="#555555" stroke-width="0.988" stroke-linecap="butt"/>
-		<line stroke="#FFFFFF" stroke-width="0.593" />
+    <rule e="way" k="highway" v="~|no">
+		  <line stroke="#555555" stroke-width="0.988" stroke-linecap="butt"/>
+		  <line stroke="#FFFFFF" stroke-width="0.593" />
+    </rule>
 		<line stroke="#DC050C" stroke-width="0.198" />
 	</rule>
 </rule>
@@ -910,8 +920,10 @@
 	</rule>
 	
 	<rule e="way" k="railway" v="tram" zoom-min="15">
-		<line stroke="#555555" stroke-width="0.658" stroke-linecap="butt"/>
-		<line stroke="#FFFFFF" stroke-width="0.395" />
+    <rule e="way" k="highway" v="~|no">
+		  <line stroke="#555555" stroke-width="0.658" stroke-linecap="butt"/>
+		  <line stroke="#FFFFFF" stroke-width="0.395" />
+    </rule>
 		<line stroke="#DC050C" stroke-width="0.132" />
 	</rule>
 </rule>

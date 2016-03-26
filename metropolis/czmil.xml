@@ -34,7 +34,11 @@
 
 <!-- buildings -->
 <rule e="way" k="building" v="*">
-	<area fill="#D6C1DE" stroke-width="0.000"/>
+	<area fill="#D6C1DE" stroke="#999999" stroke-width="1.000"/>
+</rule>
+
+<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
+	<area fill="#B178A6" stroke="#999999" stroke-width="1.000"/>
 </rule>
 
 <!-- power lines -->
@@ -183,7 +187,11 @@
 
 <!-- buildings -->
 <rule e="way" k="building" v="*">
-	<area fill="#D6C1DE" stroke-width="0.000"/>
+	<area fill="#D6C1DE" stroke="#999999" stroke-width="0.667"/>
+</rule>
+
+<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
+	<area fill="#B178A6" stroke="#999999" stroke-width="0.667"/>
 </rule>
 
 <!-- power lines -->
@@ -332,7 +340,11 @@
 
 <!-- buildings -->
 <rule e="way" k="building" v="*">
-	<area fill="#D6C1DE" stroke-width="0.000"/>
+	<area fill="#D6C1DE" stroke="#999999" stroke-width="0.444"/>
+</rule>
+
+<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
+	<area fill="#B178A6" stroke="#999999" stroke-width="0.444"/>
 </rule>
 
 <!-- power lines -->
@@ -481,7 +493,11 @@
 
 <!-- buildings -->
 <rule e="way" k="building" v="*">
-	<area fill="#D6C1DE" stroke-width="0.000"/>
+	<area fill="#D6C1DE" stroke="#999999" stroke-width="0.296"/>
+</rule>
+
+<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
+	<area fill="#B178A6" stroke="#999999" stroke-width="0.296"/>
 </rule>
 
 <!-- power lines -->
@@ -630,7 +646,11 @@
 
 <!-- buildings -->
 <rule e="way" k="building" v="*">
-	<area fill="#D6C1DE" stroke-width="0.000"/>
+	<area fill="#D6C1DE" stroke="#999999" stroke-width="0.198"/>
+</rule>
+
+<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
+	<area fill="#B178A6" stroke="#999999" stroke-width="0.198"/>
 </rule>
 
 <!-- power lines -->
@@ -779,7 +799,11 @@
 
 <!-- buildings -->
 <rule e="way" k="building" v="*">
-	<area fill="#D6C1DE" stroke-width="0.000"/>
+	<area fill="#D6C1DE" stroke="#999999" stroke-width="0.132"/>
+</rule>
+
+<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
+	<area fill="#B178A6" stroke="#999999" stroke-width="0.132"/>
 </rule>
 
 <!-- power lines -->

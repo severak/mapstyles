@@ -448,7 +448,7 @@
 
 </rule>
 
-<rule e="any" k="*" v="*" zoom-min="15" >
+<rule e="any" k="*" v="*" zoom-min="15" zoom-max="15" >
 <!-- landuse -->
 <rule e="way" k="natural|landuse|amenity" v="forest|wood">
 	<area src="file:patterns/conifer.png" stroke-width="0.000"/>
@@ -597,7 +597,7 @@
 
 </rule>
 
-<rule e="any" k="*" v="*" zoom-min="16" >
+<rule e="any" k="*" v="*" zoom-min="16" zoom-max="16" >
 <!-- landuse -->
 <rule e="way" k="natural|landuse|amenity" v="forest|wood">
 	<area src="file:patterns/conifer.png" stroke-width="0.000"/>

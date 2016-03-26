@@ -24,7 +24,9 @@ local template = read_file('body.txt')
 local outp = io.open('czmil.xml', 'w+')
 outp:write(header)
 
-for zoom=12,17 do
+local max_zoom = 17
+
+for zoom=12,max_zoom do
 	local tmp = template
 	
 	tmp = string.gsub(tmp, 'width="(%d+)"', function(px) return 'width="' .. resize_w(px, zoom)..'"'  end)
@@ -34,7 +36,7 @@ for zoom=12,17 do
 	if zoom>12 then
 		outp:write('zoom-min="'..zoom..'" ' )
 	end
-	if zoom<15 then
+	if zoom<max_zoom then
 		outp:write('zoom-max="'..zoom..'" ' )
 	end
 	outp:write('>\n')

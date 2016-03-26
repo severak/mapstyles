@@ -4,7 +4,7 @@
 <rule e="any" k="*" v="*" zoom-max="12" >
 <!-- landuse -->
 <rule e="way" k="natural|landuse|amenity" v="forest|wood">
-	<area src="file:patterns/conifer.png" stroke-width="0.000"/>
+	<area fill="#90C987" src="file:patterns/conifer.png" stroke-width="0.000"/>
 </rule>
 
 <rule e="way" k="natural|landuse|leisure|sport" v="grass|meadow|vineyard|orchad|village_green|garden|park|golf|scrub|allotments">
@@ -12,7 +12,7 @@
 </rule>
 
 <rule e="way" k="amenity|landuse" v="grave_yard|cemetery">
-	<area src="file:patterns/graveyard.png" stroke-width="0.000"/>
+	<area fill="#CAE0AB" src="file:patterns/graveyard.png" stroke-width="1.000" stroke="#999999"/>
 </rule>
 
 <!-- water -->
@@ -39,12 +39,6 @@
 
 <rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
 	<area fill="#B178A6" stroke="#999999" stroke-width="1.000"/>
-</rule>
-
-<!-- power lines -->
-<rule e="way" k="power" v="line" zoom-min="10">
-	<line stroke="#555555" stroke-width="1.000"/>
-	<line stroke="#555555" stroke-width="3.000" stroke-dasharray="1, 40" stroke-linecap="round"/>
 </rule>
 	
 <!-- airports -->
@@ -116,13 +110,15 @@
 	
 	<!-- railways -->
 	
+  <rule e="way" k="railway" v="disused">
+		<line stroke="#999999" stroke-width="3.000" stroke-linecap="butt"/>
+	</rule>
+  
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="3.000" stroke-linecap="butt"/>
 	</rule>
 	
-	<rule e="way" k="railway" v="abandoned">
-		<line stroke="#999999" stroke-width="3.000" stroke-linecap="butt"/>
-	</rule>
+	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="1.000" />
@@ -153,13 +149,19 @@
 	</rule>
 </rule>
 
+<!-- power lines -->
+<rule e="way" k="power" v="line" zoom-min="10">
+	<line stroke="#555555" stroke-width="1.000"/>
+	<line stroke="#555555" stroke-width="3.000" stroke-dasharray="1, 40" stroke-linecap="round"/>
+</rule>
+
 
 </rule>
 
 <rule e="any" k="*" v="*" zoom-min="13" zoom-max="13" >
 <!-- landuse -->
 <rule e="way" k="natural|landuse|amenity" v="forest|wood">
-	<area src="file:patterns/conifer.png" stroke-width="0.000"/>
+	<area fill="#90C987" src="file:patterns/conifer.png" stroke-width="0.000"/>
 </rule>
 
 <rule e="way" k="natural|landuse|leisure|sport" v="grass|meadow|vineyard|orchad|village_green|garden|park|golf|scrub|allotments">
@@ -167,7 +169,7 @@
 </rule>
 
 <rule e="way" k="amenity|landuse" v="grave_yard|cemetery">
-	<area src="file:patterns/graveyard.png" stroke-width="0.000"/>
+	<area fill="#CAE0AB" src="file:patterns/graveyard.png" stroke-width="0.667" stroke="#999999"/>
 </rule>
 
 <!-- water -->
@@ -194,12 +196,6 @@
 
 <rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
 	<area fill="#B178A6" stroke="#999999" stroke-width="0.667"/>
-</rule>
-
-<!-- power lines -->
-<rule e="way" k="power" v="line" zoom-min="10">
-	<line stroke="#555555" stroke-width="0.667"/>
-	<line stroke="#555555" stroke-width="2.000" stroke-dasharray="1, 40" stroke-linecap="round"/>
 </rule>
 	
 <!-- airports -->
@@ -271,13 +267,15 @@
 	
 	<!-- railways -->
 	
+  <rule e="way" k="railway" v="disused">
+		<line stroke="#999999" stroke-width="2.000" stroke-linecap="butt"/>
+	</rule>
+  
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="2.000" stroke-linecap="butt"/>
 	</rule>
 	
-	<rule e="way" k="railway" v="abandoned">
-		<line stroke="#999999" stroke-width="2.000" stroke-linecap="butt"/>
-	</rule>
+	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="0.667" />
@@ -308,13 +306,19 @@
 	</rule>
 </rule>
 
+<!-- power lines -->
+<rule e="way" k="power" v="line" zoom-min="10">
+	<line stroke="#555555" stroke-width="0.667"/>
+	<line stroke="#555555" stroke-width="2.000" stroke-dasharray="1, 40" stroke-linecap="round"/>
+</rule>
+
 
 </rule>
 
 <rule e="any" k="*" v="*" zoom-min="14" zoom-max="14" >
 <!-- landuse -->
 <rule e="way" k="natural|landuse|amenity" v="forest|wood">
-	<area src="file:patterns/conifer.png" stroke-width="0.000"/>
+	<area fill="#90C987" src="file:patterns/conifer.png" stroke-width="0.000"/>
 </rule>
 
 <rule e="way" k="natural|landuse|leisure|sport" v="grass|meadow|vineyard|orchad|village_green|garden|park|golf|scrub|allotments">
@@ -322,7 +326,7 @@
 </rule>
 
 <rule e="way" k="amenity|landuse" v="grave_yard|cemetery">
-	<area src="file:patterns/graveyard.png" stroke-width="0.000"/>
+	<area fill="#CAE0AB" src="file:patterns/graveyard.png" stroke-width="0.444" stroke="#999999"/>
 </rule>
 
 <!-- water -->
@@ -349,12 +353,6 @@
 
 <rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
 	<area fill="#B178A6" stroke="#999999" stroke-width="0.444"/>
-</rule>
-
-<!-- power lines -->
-<rule e="way" k="power" v="line" zoom-min="10">
-	<line stroke="#555555" stroke-width="0.444"/>
-	<line stroke="#555555" stroke-width="1.333" stroke-dasharray="1, 40" stroke-linecap="round"/>
 </rule>
 	
 <!-- airports -->
@@ -426,13 +424,15 @@
 	
 	<!-- railways -->
 	
+  <rule e="way" k="railway" v="disused">
+		<line stroke="#999999" stroke-width="1.333" stroke-linecap="butt"/>
+	</rule>
+  
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="1.333" stroke-linecap="butt"/>
 	</rule>
 	
-	<rule e="way" k="railway" v="abandoned">
-		<line stroke="#999999" stroke-width="1.333" stroke-linecap="butt"/>
-	</rule>
+	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="0.444" />
@@ -463,13 +463,19 @@
 	</rule>
 </rule>
 
+<!-- power lines -->
+<rule e="way" k="power" v="line" zoom-min="10">
+	<line stroke="#555555" stroke-width="0.444"/>
+	<line stroke="#555555" stroke-width="1.333" stroke-dasharray="1, 40" stroke-linecap="round"/>
+</rule>
+
 
 </rule>
 
 <rule e="any" k="*" v="*" zoom-min="15" zoom-max="15" >
 <!-- landuse -->
 <rule e="way" k="natural|landuse|amenity" v="forest|wood">
-	<area src="file:patterns/conifer.png" stroke-width="0.000"/>
+	<area fill="#90C987" src="file:patterns/conifer.png" stroke-width="0.000"/>
 </rule>
 
 <rule e="way" k="natural|landuse|leisure|sport" v="grass|meadow|vineyard|orchad|village_green|garden|park|golf|scrub|allotments">
@@ -477,7 +483,7 @@
 </rule>
 
 <rule e="way" k="amenity|landuse" v="grave_yard|cemetery">
-	<area src="file:patterns/graveyard.png" stroke-width="0.000"/>
+	<area fill="#CAE0AB" src="file:patterns/graveyard.png" stroke-width="0.296" stroke="#999999"/>
 </rule>
 
 <!-- water -->
@@ -504,12 +510,6 @@
 
 <rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
 	<area fill="#B178A6" stroke="#999999" stroke-width="0.296"/>
-</rule>
-
-<!-- power lines -->
-<rule e="way" k="power" v="line" zoom-min="10">
-	<line stroke="#555555" stroke-width="0.296"/>
-	<line stroke="#555555" stroke-width="0.889" stroke-dasharray="1, 40" stroke-linecap="round"/>
 </rule>
 	
 <!-- airports -->
@@ -581,13 +581,15 @@
 	
 	<!-- railways -->
 	
+  <rule e="way" k="railway" v="disused">
+		<line stroke="#999999" stroke-width="0.889" stroke-linecap="butt"/>
+	</rule>
+  
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="0.889" stroke-linecap="butt"/>
 	</rule>
 	
-	<rule e="way" k="railway" v="abandoned">
-		<line stroke="#999999" stroke-width="0.889" stroke-linecap="butt"/>
-	</rule>
+	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="0.296" />
@@ -618,13 +620,19 @@
 	</rule>
 </rule>
 
+<!-- power lines -->
+<rule e="way" k="power" v="line" zoom-min="10">
+	<line stroke="#555555" stroke-width="0.296"/>
+	<line stroke="#555555" stroke-width="0.889" stroke-dasharray="1, 40" stroke-linecap="round"/>
+</rule>
+
 
 </rule>
 
 <rule e="any" k="*" v="*" zoom-min="16" zoom-max="16" >
 <!-- landuse -->
 <rule e="way" k="natural|landuse|amenity" v="forest|wood">
-	<area src="file:patterns/conifer.png" stroke-width="0.000"/>
+	<area fill="#90C987" src="file:patterns/conifer.png" stroke-width="0.000"/>
 </rule>
 
 <rule e="way" k="natural|landuse|leisure|sport" v="grass|meadow|vineyard|orchad|village_green|garden|park|golf|scrub|allotments">
@@ -632,7 +640,7 @@
 </rule>
 
 <rule e="way" k="amenity|landuse" v="grave_yard|cemetery">
-	<area src="file:patterns/graveyard.png" stroke-width="0.000"/>
+	<area fill="#CAE0AB" src="file:patterns/graveyard.png" stroke-width="0.198" stroke="#999999"/>
 </rule>
 
 <!-- water -->
@@ -659,12 +667,6 @@
 
 <rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
 	<area fill="#B178A6" stroke="#999999" stroke-width="0.198"/>
-</rule>
-
-<!-- power lines -->
-<rule e="way" k="power" v="line" zoom-min="10">
-	<line stroke="#555555" stroke-width="0.198"/>
-	<line stroke="#555555" stroke-width="0.593" stroke-dasharray="1, 40" stroke-linecap="round"/>
 </rule>
 	
 <!-- airports -->
@@ -736,13 +738,15 @@
 	
 	<!-- railways -->
 	
+  <rule e="way" k="railway" v="disused">
+		<line stroke="#999999" stroke-width="0.593" stroke-linecap="butt"/>
+	</rule>
+  
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="0.593" stroke-linecap="butt"/>
 	</rule>
 	
-	<rule e="way" k="railway" v="abandoned">
-		<line stroke="#999999" stroke-width="0.593" stroke-linecap="butt"/>
-	</rule>
+	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="0.198" />
@@ -773,13 +777,19 @@
 	</rule>
 </rule>
 
+<!-- power lines -->
+<rule e="way" k="power" v="line" zoom-min="10">
+	<line stroke="#555555" stroke-width="0.198"/>
+	<line stroke="#555555" stroke-width="0.593" stroke-dasharray="1, 40" stroke-linecap="round"/>
+</rule>
+
 
 </rule>
 
 <rule e="any" k="*" v="*" zoom-min="17" >
 <!-- landuse -->
 <rule e="way" k="natural|landuse|amenity" v="forest|wood">
-	<area src="file:patterns/conifer.png" stroke-width="0.000"/>
+	<area fill="#90C987" src="file:patterns/conifer.png" stroke-width="0.000"/>
 </rule>
 
 <rule e="way" k="natural|landuse|leisure|sport" v="grass|meadow|vineyard|orchad|village_green|garden|park|golf|scrub|allotments">
@@ -787,7 +797,7 @@
 </rule>
 
 <rule e="way" k="amenity|landuse" v="grave_yard|cemetery">
-	<area src="file:patterns/graveyard.png" stroke-width="0.000"/>
+	<area fill="#CAE0AB" src="file:patterns/graveyard.png" stroke-width="0.132" stroke="#999999"/>
 </rule>
 
 <!-- water -->
@@ -814,12 +824,6 @@
 
 <rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
 	<area fill="#B178A6" stroke="#999999" stroke-width="0.132"/>
-</rule>
-
-<!-- power lines -->
-<rule e="way" k="power" v="line" zoom-min="10">
-	<line stroke="#555555" stroke-width="0.132"/>
-	<line stroke="#555555" stroke-width="0.395" stroke-dasharray="1, 40" stroke-linecap="round"/>
 </rule>
 	
 <!-- airports -->
@@ -891,13 +895,15 @@
 	
 	<!-- railways -->
 	
+  <rule e="way" k="railway" v="disused">
+		<line stroke="#999999" stroke-width="0.395" stroke-linecap="butt"/>
+	</rule>
+  
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="0.395" stroke-linecap="butt"/>
 	</rule>
 	
-	<rule e="way" k="railway" v="abandoned">
-		<line stroke="#999999" stroke-width="0.395" stroke-linecap="butt"/>
-	</rule>
+	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="0.132" />
@@ -926,6 +932,12 @@
     </rule>
 		<line stroke="#DC050C" stroke-width="0.132" />
 	</rule>
+</rule>
+
+<!-- power lines -->
+<rule e="way" k="power" v="line" zoom-min="10">
+	<line stroke="#555555" stroke-width="0.132"/>
+	<line stroke="#555555" stroke-width="0.395" stroke-dasharray="1, 40" stroke-linecap="round"/>
 </rule>
 
 

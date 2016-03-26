@@ -1,1 +1,14 @@
+
+<rule e="any" k="amenity" v="place_of_worship">
+  <rule e="any" k="religion" v="jewish">
+    <symbol src="file:symbols/synagogue.png" />
+  </rule>
+  
+  <rule e="any" k="religion" v="christian">
+    <symbol src="file:symbols/church.png" />
+  </rule>
+  
+  
+</rule>
+
 <!-- bez popisku -->

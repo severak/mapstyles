@@ -33,7 +33,7 @@
 	<area fill="#D6C1DE" stroke="#999999" stroke-width="1"/>
 </rule>
 
-<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
+<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university|synagogue">
 	<area fill="#B178A6" stroke="#999999" stroke-width="1"/>
 </rule>
 	

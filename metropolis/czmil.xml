@@ -37,7 +37,7 @@
 	<area fill="#D6C1DE" stroke="#999999" stroke-width="1.000"/>
 </rule>
 
-<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
+<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university|synagogue">
 	<area fill="#B178A6" stroke="#999999" stroke-width="1.000"/>
 </rule>
 	
@@ -194,7 +194,7 @@
 	<area fill="#D6C1DE" stroke="#999999" stroke-width="0.667"/>
 </rule>
 
-<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
+<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university|synagogue">
 	<area fill="#B178A6" stroke="#999999" stroke-width="0.667"/>
 </rule>
 	
@@ -351,7 +351,7 @@
 	<area fill="#D6C1DE" stroke="#999999" stroke-width="0.444"/>
 </rule>
 
-<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
+<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university|synagogue">
 	<area fill="#B178A6" stroke="#999999" stroke-width="0.444"/>
 </rule>
 	
@@ -508,7 +508,7 @@
 	<area fill="#D6C1DE" stroke="#999999" stroke-width="0.296"/>
 </rule>
 
-<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
+<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university|synagogue">
 	<area fill="#B178A6" stroke="#999999" stroke-width="0.296"/>
 </rule>
 	
@@ -665,7 +665,7 @@
 	<area fill="#D6C1DE" stroke="#999999" stroke-width="0.198"/>
 </rule>
 
-<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
+<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university|synagogue">
 	<area fill="#B178A6" stroke="#999999" stroke-width="0.198"/>
 </rule>
 	
@@ -822,7 +822,7 @@
 	<area fill="#D6C1DE" stroke="#999999" stroke-width="0.132"/>
 </rule>
 
-<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university">
+<rule e="way" k="building" v="civic|church|chapel|cathedral|castle|embassy|museum|school|university|synagogue">
 	<area fill="#B178A6" stroke="#999999" stroke-width="0.132"/>
 </rule>
 	
@@ -941,6 +941,19 @@
 </rule>
 
 
+</rule>
+
+
+<rule e="any" k="amenity" v="place_of_worship">
+  <rule e="any" k="religion" v="jewish">
+    <symbol src="file:symbols/synagogue.png" />
+  </rule>
+  
+  <rule e="any" k="religion" v="christian">
+    <symbol src="file:symbols/church.png" />
+  </rule>
+  
+  
 </rule>
 
 <!-- bez popisku --></rendertheme>

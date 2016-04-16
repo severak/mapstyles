@@ -1,0 +1,3 @@
+<!--  METROPOLIS  mapsforge theme -->
+
+<!-- made for Matička Metropolis (http://metropolis.svita.cz) by Severák -->

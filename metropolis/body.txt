@@ -83,14 +83,24 @@
 	<rule e="way" k="highway" v="footway|pedestrian|cycleway" zoom-min="14">
 		<line stroke="#FFFFFF" stroke-width="2" stroke-linecap="butt"/>
 	</rule>
-
+	
+	<!-- low zoom roads-->
+	<rule e="way" k="highway" v="residential|road|service|unclassified|living_street" zoom-max="14">
+		<line stroke="#555555" stroke-width="1" stroke-linecap="butt"/>
+	</rule>
+	
+	<rule e="way" k="highway" v="motorway|trunk|primary|secondary|tertiary|motorway_link|trunk_link|primary_link|secondary_link|tertiary_link"  zoom-max="14">
+		<line stroke="#555555" stroke-width="5" stroke-linecap="butt"/>
+		<line stroke="#F7EE55" stroke-width="3" stroke-linecap="round"/>
+	</rule>
+	
 	<!-- roads casing -->
 	
 	<rule e="way" k="highway" v="residential|road|service|unclassified|living_street" zoom-min="14">
 		<line stroke="#555555" stroke-width="6" stroke-linecap="butt"/>
 	</rule>
 	
-	<rule e="way" k="highway" v="motorway|trunk|primary|secondary|tertiary|motorway_link|trunk_link|primary_link|secondary_link|tertiary_link">
+	<rule e="way" k="highway" v="motorway|trunk|primary|secondary|tertiary|motorway_link|trunk_link|primary_link|secondary_link|tertiary_link"  zoom-min="14">
 		<line stroke="#555555" stroke-width="8" stroke-linecap="butt"/>
 	</rule>
 
@@ -100,7 +110,7 @@
 		<line stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
 	</rule>
 	
-	<rule e="way" k="highway" v="motorway|trunk|primary|secondary|tertiary|motorway_link|trunk_link|primary_link|secondary_link|tertiary_link">
+	<rule e="way" k="highway" v="motorway|trunk|primary|secondary|tertiary|motorway_link|trunk_link|primary_link|secondary_link|tertiary_link"  zoom-min="14">
 		<line stroke="#F7EE55" stroke-width="6" stroke-linecap="round"/>
 	</rule>
 	

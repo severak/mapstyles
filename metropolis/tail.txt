@@ -20,8 +20,12 @@
 
 <!-- popisky -->
 
-<rule e="node" k="place" v="city|town|village|hamlet" zoom-min="10" zoom-max="14">
+<rule e="node" k="place" v="city|town" zoom-min="10" zoom-max="14">
 	<caption priority="3" k="name" font-family="serif" font-style="bold" font-size="36" fill="#000000" stroke-width="2" stroke="#FFFFFF"/>
+</rule>
+
+<rule e="node" k="place" v="village|hamlet" zoom-min="10">
+	<caption priority="2" k="name" font-family="serif" font-style="bold" font-size="22" fill="#000000" stroke-width="2" stroke="#FFFFFF"/>
 </rule>
 
 <rule e="node" k="place" v="suburb" zoom-min="10">

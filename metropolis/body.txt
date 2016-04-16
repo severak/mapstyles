@@ -113,8 +113,6 @@
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="3" stroke-linecap="butt"/>
 	</rule>
-	
-	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="1" />

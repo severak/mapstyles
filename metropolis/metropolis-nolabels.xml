@@ -120,8 +120,6 @@
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="3.000" stroke-linecap="butt"/>
 	</rule>
-	
-	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="1.000" />
@@ -277,8 +275,6 @@
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="2.000" stroke-linecap="butt"/>
 	</rule>
-	
-	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="0.667" />
@@ -434,8 +430,6 @@
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="1.333" stroke-linecap="butt"/>
 	</rule>
-	
-	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="0.444" />
@@ -591,8 +585,6 @@
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="0.889" stroke-linecap="butt"/>
 	</rule>
-	
-	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="0.296" />
@@ -748,8 +740,6 @@
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="0.593" stroke-linecap="butt"/>
 	</rule>
-	
-	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="0.198" />
@@ -905,8 +895,6 @@
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="0.395" stroke-linecap="butt"/>
 	</rule>
-	
-	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="0.132" />
@@ -957,4 +945,13 @@
   <symbol src="file:symbols/church.png" />
 </rule>
 
-<!-- zatim bez popisku --></rendertheme>
+<rule e="node" k="railway" v="halt|tram_stop" zoom-min="15">
+	<circle r="3" fill="#DC050C" stroke="#FFFFFF" stroke-width="1" />
+</rule>
+
+<rule e="node" k="railway" v="station" zoom-min="14">
+	<circle r="6" fill="#000000" stroke="#FFFFFF" stroke-width="1" />
+</rule>
+
+<!-- bez popisků -->
+</rendertheme>

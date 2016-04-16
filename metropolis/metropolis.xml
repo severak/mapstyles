@@ -120,8 +120,6 @@
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="3.000" stroke-linecap="butt"/>
 	</rule>
-	
-	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="1.000" />
@@ -277,8 +275,6 @@
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="2.000" stroke-linecap="butt"/>
 	</rule>
-	
-	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="0.667" />
@@ -434,8 +430,6 @@
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="1.333" stroke-linecap="butt"/>
 	</rule>
-	
-	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="0.444" />
@@ -591,8 +585,6 @@
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="0.889" stroke-linecap="butt"/>
 	</rule>
-	
-	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="0.296" />
@@ -748,8 +740,6 @@
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="0.593" stroke-linecap="butt"/>
 	</rule>
-	
-	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="0.198" />
@@ -905,8 +895,6 @@
 	<rule e="way" k="railway" v="rail|narrow_gauge|light_rail">
 		<line stroke="#555555" stroke-width="0.395" stroke-linecap="butt"/>
 	</rule>
-	
-	
 
 	<rule e="way" k="railway" v="tram" zoom-min="15">
 		<line stroke="#DC050C" stroke-width="0.132" />
@@ -957,4 +945,46 @@
   <symbol src="file:symbols/church.png" />
 </rule>
 
-<!-- zatim bez popisku --></rendertheme>
+<rule e="node" k="railway" v="halt|tram_stop" zoom-min="15">
+	<circle r="3" fill="#DC050C" stroke="#FFFFFF" stroke-width="1" />
+</rule>
+
+<rule e="node" k="railway" v="station" zoom-min="14">
+	<circle r="6" fill="#000000" stroke="#FFFFFF" stroke-width="1" />
+	<caption priority="1" k="name" dy="-13" font-style="bold" font-size="10" fill="#000000" stroke="#ffffff" stroke-width="2.0" />
+</rule>
+
+<!-- popisky -->
+
+<rule e="node" k="place" v="city|town|village|hamlet" zoom-min="10" zoom-max="14">
+	<caption priority="3" k="name" font-family="serif" font-style="bold" font-size="36" fill="#000000" stroke-width="2" stroke="#FFFFFF"/>
+</rule>
+
+<rule e="node" k="place" v="suburb" zoom-min="10">
+	<caption priority="2" k="name" font-family="serif" font-style="bold_italic" font-size="22" fill="#000000" stroke-width="2" stroke="#FFFFFF"/>
+</rule>
+
+<rule e="node" k="place" v="quarter|neighbourhood" zoom-min="10">
+	<caption priority="1" k="name" font-family="serif" font-style="bold_italic" font-size="16" fill="#000000" stroke-width="2" stroke="#FFFFFF"/>
+</rule>
+
+<rule e="way" k="highway" v="*" zoom-min="15">
+	<pathText k="name" font-family="sans_serif" font-size="10" font-style="bold" fill="#000000" stroke-width="2" stroke="#FFFFFF"/>
+</rule>
+
+<rule e="way" k="waterway" v="river|stream" zoom-min="15">
+	<pathText k="name" font-family="sans_serif" font-size="10" font-style="bold_italic" fill="#1965B0" stroke-width="2" stroke="#FFFFFF"/>
+</rule>
+
+<rule e="way" k="natural|landuse" v="water|reservoir" zoom-min="15">
+	<caption k="name" font-family="sans_serif" font-size="10" font-style="bold_italic" fill="#1965B0" stroke-width="2" stroke="#FFFFFF"/>
+</rule>
+
+<rule e="way" k="amenity|natural|landuse|leisure|sport" v="grass|meadow|vineyard|orchad|village_green|garden|park|golf|scrub|allotments|grave_yard|cemetery" zoom-min="15">
+	<caption priority="-3" k="name" font-family="monospace" font-size="10" fill="#000000" />
+</rule>
+
+<rule e="way" k="building" v="civic|church|chapel|cathedral|castle" zoom-min="15">
+	<caption priority="-4" k="name" font-style="italic" font-family="serif" font-size="10" fill="#000000"/>
+</rule>
+</rendertheme>

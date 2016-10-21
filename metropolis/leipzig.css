@@ -2,18 +2,27 @@
 
 /* (using paul tol palette) */
 
+/* water */
 .fill.tag-natural-water, .fill.tag-landuse-reservoir { fill: #7BAFDE; }
 .stroke.tag-natural-water, .stroke.tag-landuse-reservoir { stroke: #1965B0; stroke-width: 2; }
 .fill.tag-waterway { fill: #7BAFDE; }
-.fill.tag-building { fill: #F1932D; }
 
 .tag-waterway { stroke: #1965B0; stroke-width: 2px; }
 .area.tag-waterway { stroke-width: 1px; }
 
-.casing.tag-railway-rail { stroke: #555; stroke-width: 3px; }
-.stroke.tag-railway-rail { stroke: white; stroke-width: 2px; stroke-dasharray: 12,12; }
+/* building */
+
+.fill.tag-building { fill: #D6C1DE; }
+
+/* railway and tram */
 
 .stroke.tag-railway-tram { stroke: #DC050C; stroke-width: 1; }
+
+.stroke.tag-railway-rail { stroke: #555555; stroke-width: 2px; }
+
+.tag-railway-rail.tag-tunnel { stroke-dasharray: 3, 3; }
+
+/* major road */
 
 .casing.tag-highway-motorway_link,
 .casing.tag-highway-trunk,
@@ -22,7 +31,7 @@
 .casing.tag-highway-primary_link,
 .casing.tag-highway-secondary,
 .casing.tag-highway-secondary_link,
-.casing.tag-highway-tertiary { stroke: #D6C1DE; stroke-width: 8px; }
+.casing.tag-highway-tertiary { stroke: #555555; stroke-width: 8px; }
 
 .stroke.tag-highway-motorway_link,
 .stroke.tag-highway-trunk,
@@ -33,13 +42,19 @@
 .stroke.tag-highway-secondary_link,
 .stroke.tag-highway-tertiary { stroke: #F7EE55; stroke-width: 6px;  }
 
+/* minor road */
+
 .casing.tag-highway-residential, 
-.casing.tag-highway-service { stroke: #555; stroke-width: 6px; }
+.casing.tag-highway-service { stroke: #555555; stroke-width: 6px; }
+
 .stroke.tag-highway-residential,
-.stroke.tag-highway-service { stroke: white; stroke-width: 4px;  }
+.stroke.tag-highway-service { stroke: #FFFFFF; stroke-width: 4px;  }
+
+/* landuse */
 
 .tag-landuse-forest { fill: #90C987; }
 .tag-landuse-grass, .tag-leisure-garden { fill: #CAE0AB; }
-.tag-tunnel { display: none; }
 
-.casing.tag-bridge.tag-highway { stroke: black; }
+/* bridge casing */
+
+.casing.tag-bridge.tag-highway { stroke: #000000; }

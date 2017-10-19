@@ -2,6 +2,7 @@ package.path = '../lualibs/?.lua;' .. package.path
 
 require 'mapdef'
 local colorbook = require 'colorbook'
+local legend = require 'legend'
 
 -- možné prvky
 
@@ -16,7 +17,7 @@ local F_ROAD_MAJOR = {highway={major=true, primary=true, secondary=true, tertiar
 
 local F_ROAD_MINOR = { highway={residential=true, service=true} }
 
-local F_FOOTWAY = { highway={footway=true}}
+local F_FOOTWAY = { highway={footway=true, pedestrian=true}}
 
 local F_STEPS = { highway={steps=true}}
 
@@ -46,17 +47,20 @@ local GREEN = '#859900'
 
 area{
 	feat = F_WATER,
-	color = BLUE
+	color = BLUE,
+	desc = 'vodní plochy'
 }
 
 area{
 	feat = F_FOREST,
-	color = GREEN
+	color = GREEN,
+	desc = 'les'
 }
 
 area{
 	feat = F_BUILDING,
-	color = BASE00
+	color = BASE00,
+	desc = 'budovy'
 }
 
 -- potoky
@@ -64,7 +68,8 @@ area{
 line{
 	feat = F_WATER,
 	color = BLUE,
-	width = 2
+	width = 2,
+	desc = 'vodní toky'
 }
 
 -- silnice / okraje
@@ -72,19 +77,22 @@ line{
 line{
 	feat=F_FOOTWAY,
 	color = ORANGE,
-	dashing = {2, 2}
+	dashing = {2, 2},
+	desc = 'pěšina'
 }
 
 line{
 	feat=F_ROAD_MINOR,
 	color = ORANGE,
-	width = 3
+	width = 3,
+	desc = 'vedlejší silnice'
 }
 
 line{
 	feat=F_ROAD_MAJOR,
 	color = ORANGE,
-	width = 5
+	width = 5,
+	desc = 'hlavní silnice'
 }
 
 -- / výplň
@@ -106,7 +114,8 @@ line{
 line{
 	feat = F_RAIL,
 	color = BASE03,
-	width = 3
+	width = 3,
+	desc = 'železnice'
 }
 
 line{ -- čárkované koleje
@@ -125,5 +134,10 @@ line{
 -- generujeme zatím jen ColorBook CSS
 
 colorbook.css 'map.css'
+
+-- + legendu
+
+legend.html()
+
 
 print "OK"

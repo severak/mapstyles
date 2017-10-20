@@ -12,11 +12,11 @@ local F_BUILDING = {building=ANY}
 local F_FOREST = {landuse='forest'}
 
 local F_RAIL = {railway='rail'}
-local F_TRAM = {railway='tram'}
+local F_TRAM = {railway='tram', railway='transit'}
 
-local F_ROAD_MAJOR = {highway={major=true, primary=true, secondary=true, tertiary=true, trunk=true, primary_link=true, secondary_link=true, tertiary_link=true, trunk_link=true}}
+local F_ROAD_MAJOR = {highway={motorway=true, major=true, primary=true, secondary=true, tertiary=true, trunk=true, primary_link=true, secondary_link=true, tertiary_link=true, trunk_link=true}}
 
-local F_ROAD_MINOR = { highway={residential=true, service=true} }
+local F_ROAD_MINOR = { highway={minor=true, residential=true, service=true, path=true} }
 
 local F_FOOTWAY = { highway={footway=true, pedestrian=true}}
 

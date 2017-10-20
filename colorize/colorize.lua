@@ -43,6 +43,11 @@ local GREEN = '#859900'
 
 -- samotný styl
 
+stylesheet 'ColorIze'
+by 'Severák'
+
+background(BASE3)
+
 -- plochy
 
 area{
@@ -95,7 +100,7 @@ line{
 	desc = 'hlavní silnice'
 }
 
--- / výplň
+-- silnice / výplň
 
 line{
 	feat=F_ROAD_MAJOR,
@@ -131,6 +136,10 @@ line{
 	width = 2
 }
 
+-- názvy obcí -- name{...}
+
+-- názvy silnic -- stretname{...}
+
 -- generujeme zatím jen ColorBook CSS
 
 colorbook.css 'map.css'
@@ -138,6 +147,8 @@ colorbook.css 'map.css'
 -- + legendu
 
 legend.html()
+
+-- + openmaptiles
 
 
 print "OK"

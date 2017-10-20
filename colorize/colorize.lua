@@ -3,6 +3,7 @@ package.path = '../lualibs/?.lua;' .. package.path
 require 'mapdef'
 local colorbook = require 'colorbook'
 local legend = require 'legend'
+local openmaptiles = require 'openmaptiles'
 
 -- možné prvky
 
@@ -150,5 +151,6 @@ legend.html()
 
 -- + openmaptiles
 
+openmaptiles.style()
 
 print "OK"

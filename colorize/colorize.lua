@@ -7,6 +7,8 @@ local openmaptiles = require 'openmaptiles'
 
 -- možné prvky
 
+-- TODO: nehádat filtry v openmaptiles, ale mít je přímo napsané zde:
+
 local F_WATER = {waterway=ANY, landuse='reservoir'}
 local F_BUILDING = {building=ANY}
 local F_FOREST = {landuse='forest'}

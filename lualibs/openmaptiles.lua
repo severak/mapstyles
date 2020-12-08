@@ -17,11 +17,11 @@ local style_tmp = [[
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://free.tilehosting.com/data/v3.json?key=RiS4gsgZPZqeeMlIyxFo"
+      "url": "https://api.maptiler.com/tiles/v3/tiles.json?key=lFBi7gs1S6TyJPtVVvOX"
     }
   },
-  "sprite": "https://openmaptiles.github.io/osm-bright-gl-style/sprite",
-  "glyphs": "https://free.tilehosting.com/fonts/{fontstack}/{range}.pbf?key=RiS4gsgZPZqeeMlIyxFo",
+  "sprite": "https://cloud.maptiler.com/api/sprites/562ae42d-8e03-483e-b83b-2eba8f700b89",
+  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=lFBi7gs1S6TyJPtVVvOX",
   "layers": []
 }
 ]]

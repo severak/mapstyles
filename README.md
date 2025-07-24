@@ -1,5 +1,6 @@
 # mapstyles
-WIP
+
+Custom map styles for Openstreetmap. These were implemented using Mapbox Studio but Mapbox decided to remove their free tier. Now these will be ported to Shortbread.
 
 ## Styles
 

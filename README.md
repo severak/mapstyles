@@ -1,12 +1,18 @@
-# mapstyles
+# Severák's map styles
 
-Custom map styles for Openstreetmap. These were implemented using Mapbox Studio but Mapbox decided to remove their free tier. Now these will be ported to Shortbread.
+Custom map styles for Openstreetmap. These were implemented using Mapbox Studio but Mapbox decided to remove their free tier. Now these will be ported to [Shortbread](https://shortbread-tiles.org/).
 
-## Styles
+## status
 
-- Piknik (ta pastelová původně zvaná Soviet)
-- Leipzig (podle papírové mapy Lipska)
-- ZM (podle základní mapy ČUZK)
-- CZMil (podle českých vojenských topografických map)
+I am porting these old styles to Shortbread. No public demo available yet.
 
-Cílit na LunaRender, optimalizovat pro ~15.
+## styles and other content
+
+- Colorize - style based on Solarized color scheme and hatching patterns (see [legacy screenshots](colorize/legacy))
+- CZMil - style inspired by Czech military maps (see [legacy screenshots](czmil/legacy))
+- Metropolis - complex style for hiking and tourist guides, ispired by old Czech tourist maps (see [legacy screenshots](metropolis/legacy))
+- Piknik - first iteration of hiking style, implemented in Mapsforge (see [screenshot](piknik/mapsforge-piknik.png))
+- Vicent - simple style focused on railways (see [legacy screenshots](vincent/legacy))
+- ZM - an attempt to reproduce color schema used by Czech Office for Surveying, Mapping and Cadastre (works only in [ColorBook test tool](http://severak.github.io/colorbook/))
+
+There is also semi usable map styling toolkit in folder `lualibs`.

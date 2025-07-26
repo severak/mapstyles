@@ -1,7 +1,7 @@
 {
   "version": 8,
   "name": "Vincent (Shortbread)",
-  "metadata": {},
+  "metadata": {"maputnik:renderer": "mlgljs"},
   "center": [14, 50],
   "zoom": 14,
   "sources": {
@@ -36,6 +36,23 @@
       "source-layer": "ocean",
       "filter": ["all"],
       "paint": {"fill-color": "#7BAFDE"}
+    },
+    {
+      "id": "quarry",
+      "type": "fill",
+      "source": "shortbread_v1",
+      "source-layer": "land",
+      "filter": ["all", ["in", "kind", "quarry", "landfill"]],
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "#ddd"}
+    },
+    {
+      "id": "construction",
+      "type": "fill",
+      "source": "shortbread_v1",
+      "source-layer": "sites",
+      "filter": ["all", ["==", "kind", "construction"]],
+      "paint": {"fill-color": " #ddd"}
     },
     {
       "id": "water",
@@ -111,7 +128,6 @@
           "in",
           "kind",
           "link",
-          "motorway",
           "motorway_link",
           "primary",
           "secondary",
@@ -121,14 +137,24 @@
         ],
         ["!=", "tunnel", true]
       ],
+      "layout": {"visibility": "visible"},
       "paint": {"line-color": "#F6C141", "line-width": 2}
+    },
+    {
+      "id": "motorway",
+      "type": "line",
+      "source": "shortbread_v1",
+      "source-layer": "streets",
+      "filter": ["all", ["==", "kind", "motorway"]],
+      "layout": {"visibility": "visible"},
+      "paint": {"line-width": 2, "line-color": "#E8601C"}
     },
     {
       "id": "subway",
       "type": "line",
       "source": "shortbread_v1",
       "source-layer": "streets",
-      "filter": ["all", ["==", "kind", "subway"]],
+      "filter": ["all", ["==", "kind", "subway"], ["!has", "service"]],
       "paint": {"line-dasharray": [3, 3]}
     },
     {
@@ -148,7 +174,44 @@
       "source": "shortbread_v1",
       "source-layer": "streets",
       "filter": ["all", ["==", "kind", "tram"]],
-      "paint": {"line-color": "#ff0000"}
+      "paint": {"line-color": "rgba(220, 5, 12, 1)"}
+    },
+    {
+      "id": "aerialways",
+      "type": "line",
+      "source": "shortbread_v1",
+      "source-layer": "aerialways"
+    },
+    {
+      "id": "aerialway stripes",
+      "type": "line",
+      "source": "shortbread_v1",
+      "source-layer": "aerialways",
+      "paint": {"line-dasharray": [0.5, 10], "line-width": 3}
+    },
+    {
+      "id": "minor boundary",
+      "type": "line",
+      "source": "shortbread_v1",
+      "source-layer": "boundaries",
+      "filter": ["all", [">", "admin_level", 2]],
+      "paint": {
+        "line-color": "#882E72",
+        "line-width": 2,
+        "line-dasharray": [3, 3]
+      }
+    },
+    {
+      "id": "state boundary",
+      "type": "line",
+      "source": "shortbread_v1",
+      "source-layer": "boundaries",
+      "filter": ["all", ["!=", "maritime", true], ["<", "admin_level", 4]],
+      "paint": {
+        "line-color": "#882E72",
+        "line-width": 4,
+        "line-dasharray": [3, 3]
+      }
     },
     {
       "id": "railway stop symbol",
@@ -175,6 +238,41 @@
         "circle-color": "#ff0000",
         "circle-stroke-color": "#ffffff",
         "circle-stroke-width": 1
+      }
+    },
+    {
+      "id": "motorway ref",
+      "type": "symbol",
+      "source": "shortbread_v1",
+      "source-layer": "street_labels",
+      "filter": [
+        "all",
+        ["has", "ref"],
+        ["in", "kind", "rail", "motorway", "primary"]
+      ],
+      "layout": {
+        "text-font": ["Noto Sans Bold"],
+        "text-field": ["get", "ref"],
+        "text-size": 10
+      },
+      "paint": {"text-halo-color": "#fff", "text-halo-width": 2}
+    },
+    {
+      "id": "house number",
+      "type": "symbol",
+      "source": "shortbread_v1",
+      "source-layer": "addresses",
+      "minzoom": 16,
+      "layout": {
+        "text-font": ["Noto Sans Regular"],
+        "text-size": 10,
+        "text-field": ["get", "housenumber"],
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#882E72",
+        "text-halo-width": 1,
+        "text-halo-color": "#fff"
       }
     },
     {
@@ -218,7 +316,11 @@
       "type": "symbol",
       "source": "shortbread_v1",
       "source-layer": "place_labels",
-      "filter": ["all", ["in", "kind", "hamlet", "suburb", "quarter"]],
+      "minzoom": 11,
+      "filter": [
+        "all",
+        ["in", "kind", "hamlet", "suburb", "quarter", "locality"]
+      ],
       "layout": {
         "text-field": ["get", "name"],
         "text-font": ["Noto Sans Regular"],
@@ -280,7 +382,7 @@
       "type": "symbol",
       "source": "shortbread_v1",
       "source-layer": "public_transport",
-      "filter": ["all", ["in", "kind", "tram_stop", "bus_stop"]],
+      "filter": ["all", ["in", "kind", "tram_stop", "bus_station", "bus_stop"]],
       "layout": {
         "text-font": ["Noto Sans Regular"],
         "text-field": ["get", "name"],
@@ -298,7 +400,7 @@
       },
       "paint": {
         "text-translate": [4, 0],
-        "text-color": "#ff0000",
+        "text-color": "#DC050C",
         "text-halo-width": 1,
         "text-halo-color": "#ffffff"
       }

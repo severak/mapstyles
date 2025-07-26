@@ -14,14 +14,21 @@ This is textual description of this style for porting it to other renderers (*WI
 
 - background `#eee8d5`
 - forests (also scrub,orchard,park,cemetery) `#CAEDAB`
+- quarry, landfill and construction - `#ccc`
 - water `#7BAFDE` 2px width
 - buildings `#D6C1DE`
 - track `#F6C141` (track,path,unclassified) 1px width dashed 2/2
 - minor roads `#F6C141` (living_street,service,road,residential,cycleway,taxiway) 1px width
-- major roads `#F6C141` (link,motorway,motorway_link,primary,secondary,tertiary,trunk,runway) (2px width)
+- major roads `#F6C141` (link,motorway_link,primary,secondary,tertiary,trunk,runway) (2px width)
+- motorway `#E8601C` 2px width
 - railway `#000000`
-- trams `#ff0000`
+- trams `#DC050C`
+- aerialway `#000` with each 10px 3px wide pillar
+- state boundaries `#882E72` - 4px wide dashed 3/3
+- minor boundaries `#882E72` - 2px wide dashed 3/3
 - water names - `#7BAFDE` 10px italic
+- motorway, primary road, railway labels - black bold 10px
+- housenumbers - `#882E72` on white 10px (from zoom 16)
 - secondary place names (hamlet,suburb,quarter) - black 10px
 - place names (capital,state_capital,city,town,village) - black 13px CAPS LOCK
 - street name (black 10px)

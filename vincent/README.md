@@ -34,7 +34,7 @@ Labels priority - railway stations > bus/tram stations > streets > place names >
 
 Colors are taken from this palette [described/invented by Paul Tol](https://web.archive.org/web/20170301135346/https://personal.sron.nl/~pault/colourschemes.pdf):
 
-![color palette used](palette.png
+![color palette used](palette.png)
 
 *TODO: general description of cartographics decisisons - colors, categories etc...*
 

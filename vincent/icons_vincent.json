@@ -1,0 +1,121 @@
+{
+  "aerialway": {
+    "height": 19,
+    "pixelRatio": 1,
+    "width": 19,
+    "x": 0,
+    "y": 42
+  },
+  "airport": {
+    "height": 19,
+    "pixelRatio": 1,
+    "width": 19,
+    "x": 19,
+    "y": 42
+  },
+  "bus": {
+    "height": 19,
+    "pixelRatio": 1,
+    "width": 19,
+    "x": 21,
+    "y": 0
+  },
+  "circle-black": {
+    "height": 21,
+    "pixelRatio": 1,
+    "width": 21,
+    "x": 0,
+    "y": 0
+  },
+  "circle-red": {
+    "height": 21,
+    "pixelRatio": 1,
+    "width": 21,
+    "x": 0,
+    "y": 21
+  },
+  "communications-tower": {
+    "height": 19,
+    "pixelRatio": 1,
+    "width": 19,
+    "x": 21,
+    "y": 19
+  },
+  "entrance": {
+    "height": 19,
+    "pixelRatio": 1,
+    "width": 19,
+    "x": 38,
+    "y": 38
+  },
+  "ferry": {
+    "height": 19,
+    "pixelRatio": 1,
+    "width": 19,
+    "x": 40,
+    "y": 0
+  },
+  "garden": {
+    "height": 19,
+    "pixelRatio": 1,
+    "width": 19,
+    "x": 40,
+    "y": 19
+  },
+  "harbor": {
+    "height": 19,
+    "pixelRatio": 1,
+    "width": 19,
+    "x": 57,
+    "y": 38
+  },
+  "heliport": {
+    "height": 19,
+    "pixelRatio": 1,
+    "width": 19,
+    "x": 59,
+    "y": 0
+  },
+  "park": {
+    "height": 19,
+    "pixelRatio": 1,
+    "width": 19,
+    "x": 59,
+    "y": 19
+  },
+  "religious-buddhist": {
+    "height": 19,
+    "pixelRatio": 1,
+    "width": 19,
+    "x": 76,
+    "y": 38
+  },
+  "religious-christian": {
+    "height": 19,
+    "pixelRatio": 1,
+    "width": 19,
+    "x": 78,
+    "y": 0
+  },
+  "religious-jewish": {
+    "height": 19,
+    "pixelRatio": 1,
+    "width": 19,
+    "x": 78,
+    "y": 19
+  },
+  "religious-muslim": {
+    "height": 19,
+    "pixelRatio": 1,
+    "width": 19,
+    "x": 95,
+    "y": 38
+  },
+  "religious-shinto": {
+    "height": 19,
+    "pixelRatio": 1,
+    "width": 19,
+    "x": 97,
+    "y": 0
+  }
+}

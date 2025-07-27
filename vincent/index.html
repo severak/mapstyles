@@ -13,11 +13,19 @@
         href="https://unpkg.com/@maplibre/maplibre-gl-geocoder@1.5.0/dist/maplibre-gl-geocoder.css"
 />
 <h1>Severák's Vincent map style</h1>
-<p>Very simple style focused on railways and public transport.</p>
+<p>Very simple style focused on railways and public transport. <a href="https://github.com/severak/mapstyles/tree/master/vincent#readme">More info on Github</a></p>
 <div id="map" style="height: 80vh"></div>
+<div>
+  <strong>Show/hide:</strong>
+  <label><input name="tram or bus stop name" type="checkbox" checked onchange="showOrHide(this)"> public transport stops</label> |
+  <label><input name="places,secondary place names" type="checkbox" checked onchange="showOrHide(this)"> place names</label> |
+  <label><input name="minor boundary,state boundary" type="checkbox" checked onchange="showOrHide(this)"> borders</label> |
+  <i>more features will be added here...</i>
+</div>
 <script>
   var map = new maplibregl.Map({
     container: 'map', // container id
+    hash: true, // <- Enable hash routing
     style: './vincent_shortbread.json', // style URL
     center: [14, 50], // starting position [lng, lat]
     zoom: 15 // starting zoom
@@ -69,6 +77,13 @@
             maplibregl, zoom: 14
           })
   );
+
+  const showOrHide = function (element){
+    let layers = element.name.split(',');
+    for (const layer of layers) {
+      map.setLayoutProperty(layer, 'visibility', element.checked ? 'visible' : 'none');
+    }
+  }
 </script>
 </body>
 </html>

@@ -1,10 +1,10 @@
 # Severák's map styles
 
-Custom map styles for Openstreetmap. These were implemented using Mapbox Studio but Mapbox decided to remove their free tier. Now these will be ported to [Shortbread](https://shortbread-tiles.org/).
+Custom map styles for Openstreetmap. These were implemented using Mapbox Studio but Mapbox decided to remove their free tier. Now some of these are ported to [Shortbread tiles](https://shortbread-tiles.org/).
 
 ## status
 
-I am porting these old styles to Shortbread. No public demo available yet.
+Style called Vincent is now being developed. See [demo](https://severak.github.io/mapstyles/vincent/).
 
 ## styles and other content
 
@@ -15,4 +15,4 @@ I am porting these old styles to Shortbread. No public demo available yet.
 - Vicent - simple style focused on railways (see [legacy screenshots](vincent/legacy)) - new version [IN PROGRESS](vincent)
 - ZM - an attempt to reproduce color schema used by Czech Office for Surveying, Mapping and Cadastre (works only in [ColorBook test tool](http://severak.github.io/colorbook/))
 
-There is also semi usable map styling toolkit in folder `lualibs`.
+There is also semi usable map styling toolkit in folder `lualibs`. No explanation is provided for this one.

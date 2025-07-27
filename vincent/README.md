@@ -1,6 +1,6 @@
 # Vincent
 
-Very simple style focused on railways and public transport. **Work in progress - not yet usable.**
+Very simple style focused on railways and public transport. **Work in progress.** Demo [here](https://severak.github.io/mapstyles/vincent/).
 
 ![demo of Vincent style](nizbor-demo.png)
 
@@ -8,9 +8,22 @@ Possible use cases: those screens in the train showing you map around the train,
 
 It will be also used as showcase of what's inside of Shortbread tiles. 
 
+## motivation and design 
+
+I don't like modern map styles. These styles are too focused on car-centric use case and tend to be very colourless. I want a map which is colorful and focused mostly on pedestrians and public transport. So I decided to built one.
+
+I want my style to be very simple yet full of features. This leads to some limitations:
+
+- I use only five group of colors - blues for watery stuff, greens for nature stuff (forests etc), purples for man made stuff (buildings etc), yellows/reds/oranges for roads and black for railways and texts.
+- There are only four kinds of roads - motorways (thick brick colored), more important roads (thick yellow), less important roads (thin yellow) and footpaths (dashed yellow).
+- There are only two levels of place name hiearchy (*this will probably change*).
+- There will be limited number of icons - for example only one for all kinds of shops.
+
+Vector tiles can also give you oppurtunity to customize map interactively on the fly - I want to explore this area.
+
 ## specification
 
-This is textual description of this style for porting it to other renderers (*WIP*):
+This is textual description/specification of this style for porting it to other renderers (*WIP*):
 
 - background `#eee8d5`
 - forests (also scrub,orchard,park,cemetery) `#CAEDAB`
@@ -35,7 +48,7 @@ This is textual description of this style for porting it to other renderers (*WI
 - tram or bus name (red 10px)
 - railway stop name (black 13px)
 
-*Icons not yet implemented nor described.*
+*Icons are not yet described.*
 
 Labels priority - railway stations > bus/tram stations > streets > place names > secondary place names.
 
@@ -43,11 +56,9 @@ Colors are taken from this palette [described/invented by Paul Tol](https://web.
 
 ![color palette used](palette.png)
 
-*TODO: general description of cartographics decisisons - colors, categories etc...*
-
 ## limitations
 
-Not usable above zoom 10 yet. 
+Not usable above zoom 10 yet. Optimized mostly for Czech republic as I have some idea what should show on map over there.
 
 Not optimised for colorblind users. I will probably implement different style/substyle later instead.
 

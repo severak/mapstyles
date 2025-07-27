@@ -15,7 +15,7 @@
       "url": "https://vector.openstreetmap.org/shortbread_v1/tilejson.json"
     }
   },
-  "sprite": "https://severak.github.io/mapstyles/icons_vincent",
+  "sprite": "https://severak.github.io/mapstyles/vincent/icons_vincent",
   "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {

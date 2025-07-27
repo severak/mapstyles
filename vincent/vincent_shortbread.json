@@ -346,6 +346,30 @@
       }
     },
     {
+      "id": "minor boundary",
+      "type": "line",
+      "source": "shortbread_v1",
+      "source-layer": "boundaries",
+      "filter": ["all", [">", "admin_level", 2]],
+      "paint": {
+        "line-color": "#882E72",
+        "line-width": 2,
+        "line-dasharray": [3, 3]
+      }
+    },
+    {
+      "id": "state boundary",
+      "type": "line",
+      "source": "shortbread_v1",
+      "source-layer": "boundaries",
+      "filter": ["all", ["!=", "maritime", true], ["<", "admin_level", 4]],
+      "paint": {
+        "line-color": "#882E72",
+        "line-width": 4,
+        "line-dasharray": [3, 3]
+      }
+    },
+    {
       "id": "house number",
       "type": "symbol",
       "source": "shortbread_v1",
